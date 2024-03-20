@@ -1,0 +1,14 @@
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\bin\Debug\net6.0\VideoGameOnlineShopDomain.deps.json
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\bin\Debug\net6.0\VideoGameOnlineShopDomain.dll
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\bin\Debug\net6.0\VideoGameOnlineShopDomain.pdb
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.AssemblyInfoInputs.cache
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.AssemblyInfo.cs
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.csproj.CoreCompileInputs.cache
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.dll
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\refint\VideoGameOnlineShopDomain.dll
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.pdb
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\ref\VideoGameOnlineShopDomain.dll
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\bin\Debug\net6.0\VideoGameOnlineShopDomain.runtimeconfig.json
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.csproj.AssemblyReference.cache
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.genruntimeconfig.cache
