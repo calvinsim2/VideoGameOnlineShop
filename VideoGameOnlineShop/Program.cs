@@ -1,27 +1,37 @@
 using Microsoft.EntityFrameworkCore;
+using VideoGameOnlineShopDomain.Interfaces;
+using VideoGameOnlineShopDomain.Services;
 using VideoGameOnlineShopInfrastructure;
+using VideoGameOnlineShopInfrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Dependency Injections 
+
+#region Services Dependency Injections
+
+builder.Services.AddScoped<IGameService, GameService>();
+builder.Services.AddScoped<IDeveloperService, DeveloperService>();
+
+#endregion
+
+#region Repository Dependency Injections
+
+builder.Services.AddScoped<IGameRepository, GameRepository>();
+builder.Services.AddScoped<IDeveloperRepository, DeveloperRepository>();
+
+#endregion
+
 // Add services to the container.
-//builder.Services.AddRazorPages();
+builder.Services.AddRazorPages();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//This section below is for connection string 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<VideoGameOnlineShopDbContext>(options => options.UseSqlServer(connectionString));
-
 //// we will do this step AFTER we created our DbContext
 //// Context is the db context that we created.
-//builder.Services.AddDbContext<VideoGameOnlineShopDbContext>(option =>
-//{
-
-//    // Need to import UseSqlServer
-//    // Configuration is already provided by Startup, so we use this to input our sql connection string
-//    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-//});
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<VideoGameOnlineShopDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddCors(options =>
 {
@@ -65,6 +75,6 @@ app.UseRouting();
 
 //app.UseAuthorization();
 app.MapControllers();
-//app.MapRazorPages();
+app.MapRazorPages();
 
 app.Run();

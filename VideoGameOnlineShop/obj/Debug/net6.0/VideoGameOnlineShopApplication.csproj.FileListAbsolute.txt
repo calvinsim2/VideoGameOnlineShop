@@ -72,3 +72,4 @@ C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGame
 C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShop\bin\Debug\net6.0\VideoGameOnlineShopInfrastructure.dll
 C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShop\bin\Debug\net6.0\VideoGameOnlineShopInfrastructure.pdb
 C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShop\bin\Debug\net6.0\VideoGameOnlineShopDomain.pdb
+C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShop\obj\Debug\net6.0\VideoGameOnlineShopApplication.sourcelink.json
