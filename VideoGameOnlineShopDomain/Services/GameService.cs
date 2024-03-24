@@ -30,7 +30,7 @@ namespace VideoGameOnlineShopDomain.Services
 
         public async Task AddGameAsync(Game game)
         {
-            _gameRepository.AddAsync(game);
+            await _gameRepository.AddAsync(game);
             await _gameRepository.SaveChangesAsync();
         }
 
