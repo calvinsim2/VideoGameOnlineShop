@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using VideoGameOnlineShopDomain.DomainModels;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Mvc;
+using VideoGameOnlineShopApplication.Interfaces;
+using VideoGameOnlineShopApplication.Models.Dto;
 using VideoGameOnlineShopDomain.Interfaces;
 
 namespace VideoGameOnlineShopApplication.Controllers
@@ -9,10 +11,16 @@ namespace VideoGameOnlineShopApplication.Controllers
     public class GameController : ControllerBase
     {
         private readonly IGameService _gameService;
+        private readonly IGameApplicationService _gameApplicationService;
+        private readonly IValidator<GameSubmissionDto> _gameDtoValidator;
 
-        public GameController(IGameService gameService)
+        public GameController(IGameService gameService,
+                              IGameApplicationService gameApplicationService,
+                              IValidator<GameSubmissionDto> gameDtoValidator)
         {
             _gameService = gameService;
+            _gameApplicationService = gameApplicationService;
+            _gameDtoValidator = gameDtoValidator;
         }
 
         [HttpGet]
@@ -23,7 +31,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetFoodByIdAsync(string id)
+        public async Task<IActionResult> GetGameByIdAsync(string id)
         {
             var game = await _gameService.GetExplicitDeveloperAsync(Guid.Parse(id));
             if (game is null)
@@ -34,10 +42,11 @@ namespace VideoGameOnlineShopApplication.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddGameAsync([FromBody] Game game)
+        public async Task<IActionResult> AddGameAsync([FromBody] GameSubmissionDto gameSubmissionDto)
         {
-            await _gameService.AddGameAsync(game);
-            return Ok(game);
+            await _gameDtoValidator.ValidateAsync(gameSubmissionDto, options => options.ThrowOnFailures());
+            await _gameApplicationService.AddGameAsync(gameSubmissionDto);
+            return Ok(gameSubmissionDto);
         }
 
         [HttpDelete("{id}")]

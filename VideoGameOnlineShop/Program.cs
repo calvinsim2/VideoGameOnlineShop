@@ -1,4 +1,9 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using VideoGameOnlineShopApplication.Interfaces;
+using VideoGameOnlineShopApplication.Models.Dto;
+using VideoGameOnlineShopApplication.Services;
+using VideoGameOnlineShopApplication.Validators;
 using VideoGameOnlineShopDomain.Interfaces;
 using VideoGameOnlineShopDomain.Services;
 using VideoGameOnlineShopInfrastructure;
@@ -9,6 +14,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Dependency Injections 
 
 #region Services Dependency Injections
+
+builder.Services.AddScoped<IGameApplicationService, GameApplicationService>();
+builder.Services.AddScoped<IDeveloperApplicationService, DeveloperApplicationService>();
 
 builder.Services.AddScoped<IGameService, GameService>();
 builder.Services.AddScoped<IDeveloperService, DeveloperService>();
@@ -22,14 +30,20 @@ builder.Services.AddScoped<IDeveloperRepository, DeveloperRepository>();
 
 #endregion
 
+#region Validators
+
+builder.Services.AddScoped<IValidator<GameSubmissionDto>, GameSubmissionDtoValidator>();
+
+#endregion
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//// we will do this step AFTER we created our DbContext
-//// Context is the db context that we created.
+// we will do this step AFTER we created our DbContext
+// Context is the db context that we created.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<VideoGameOnlineShopDbContext>(options => options.UseSqlServer(connectionString));
 
