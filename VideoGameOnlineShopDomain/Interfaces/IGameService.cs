@@ -1,12 +1,13 @@
-﻿using VideoGameOnlineShopDomain.DomainModels;
+﻿using VideoGameOnlineShopDomain.DataModels;
+using VideoGameOnlineShopDomain.DomainModels;
 
 namespace VideoGameOnlineShopDomain.Interfaces
 {
     public interface IGameService
     {
-        Task<Game?> GetExplicitDeveloperAsync(Guid id);
+        Task<GameSubmissionDataModel> GetExplicitGameAsync(Guid id);
         Task<IEnumerable<Game>> GetAllExistingGamesAsync();
-        Task AddGameAsync(Game game);
+        Task AddGameAsync(GameSubmissionDataModel gameSubmissionDataModel);
         Task DeleteSelectedGameAsync(Guid id);
     }
 }

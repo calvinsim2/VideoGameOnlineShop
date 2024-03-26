@@ -33,11 +33,8 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetGameByIdAsync(string id)
         {
-            var game = await _gameService.GetExplicitDeveloperAsync(Guid.Parse(id));
-            if (game is null)
-            {
-                return NotFound(id);
-            }
+            var game = await _gameApplicationService.GetExplicitGameAsync(Guid.Parse(id));
+
             return Ok(game);
         }
 

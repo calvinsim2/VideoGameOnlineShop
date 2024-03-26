@@ -1,4 +1,6 @@
-﻿using VideoGameOnlineShopDomain.DomainModels;
+﻿using VideoGameOnlineShopDomain.DataModels;
+using VideoGameOnlineShopDomain.DomainModels;
+using VideoGameOnlineShopDomain.Helpers.Game;
 using VideoGameOnlineShopDomain.Interfaces;
 
 namespace VideoGameOnlineShopDomain.Services
@@ -15,10 +17,12 @@ namespace VideoGameOnlineShopDomain.Services
             _developerRepository = developerRepository;
         }
 
-        public async Task<Game?> GetExplicitDeveloperAsync(Guid id)
+        public async Task<GameSubmissionDataModel> GetExplicitGameAsync(Guid id)
         {
-            Game? game = await _gameRepository.GetByIdAsync(id, false);
-            return game;
+            Game? game = await _gameRepository.GetByIdAsync(id, false) ?? new Game();
+
+            GameSubmissionDataModel gameSubmissionDataModel = GameDomainMapper.MapGameToGameDataModel(game);
+            return gameSubmissionDataModel;
         }
 
         public async Task<IEnumerable<Game>> GetAllExistingGamesAsync()
@@ -28,8 +32,9 @@ namespace VideoGameOnlineShopDomain.Services
 
         }
 
-        public async Task AddGameAsync(Game game)
+        public async Task AddGameAsync(GameSubmissionDataModel gameSubmissionDataModel)
         {
+            Game game = GameDomainMapper.MapGameDtoToGameDataModel(gameSubmissionDataModel);
             await _gameRepository.AddAsync(game);
             await _gameRepository.SaveChangesAsync();
         }
