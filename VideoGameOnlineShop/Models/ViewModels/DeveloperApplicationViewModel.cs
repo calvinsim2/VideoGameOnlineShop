@@ -2,7 +2,7 @@
 
 namespace VideoGameOnlineShopApplication.Models.ViewModels
 {
-    public class GameApplicationViewModel : Game
+    public class DeveloperApplicationViewModel : Developer
     {
     }
 }

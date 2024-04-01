@@ -33,6 +33,7 @@ builder.Services.AddScoped<IDeveloperRepository, DeveloperRepository>();
 #region Validators
 
 builder.Services.AddScoped<IValidator<GameSubmissionDto>, GameSubmissionDtoValidator>();
+builder.Services.AddScoped<IValidator<DeveloperSubmissionDto>, DeveloperSubmissionDtoValidator>();
 
 #endregion
 

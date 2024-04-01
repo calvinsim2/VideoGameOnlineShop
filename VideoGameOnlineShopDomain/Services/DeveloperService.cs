@@ -1,4 +1,6 @@
-﻿using VideoGameOnlineShopDomain.DomainModels;
+﻿using VideoGameOnlineShopDomain.DataModels;
+using VideoGameOnlineShopDomain.DomainModels;
+using VideoGameOnlineShopDomain.Helpers.Developer;
 using VideoGameOnlineShopDomain.Interfaces;
 
 namespace VideoGameOnlineShopDomain.Services
@@ -15,17 +17,26 @@ namespace VideoGameOnlineShopDomain.Services
             _developerRepository = developerRepository;
         }
 
-        public async Task<Developer?> GetExplicitDeveloperAsync(Guid id)
+        public async Task<DeveloperSubmissionDataModel> GetExplicitDeveloperAsync(Guid id)
         {
-            Developer? developers = await _developerRepository.GetByIdAsync(id, false);
-            return developers;
+            Developer? developer = await _developerRepository.GetByIdAsync(id, false) ?? new Developer();
+
+            DeveloperSubmissionDataModel developerSubmissionDataModel = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developer);
+            return developerSubmissionDataModel;
         }
 
         public async Task<IEnumerable<Developer>> GetAllExistingDevelopersAsync()
         {
             List<Developer> developers = (await _developerRepository.GetAllDevelopersAsync(false)).ToList();
             return developers;
+        }
 
+        public async Task AddDeveloperAsync(DeveloperSubmissionDataModel developerSubmissionDataModel)
+        {
+            Developer developer = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developerSubmissionDataModel);
+
+            await _developerRepository.AddAsync(developer);
+            await _developerRepository.SaveChangesAsync();
         }
     }
 }
