@@ -17,6 +17,7 @@ namespace VideoGameOnlineShopDomain.Helpers.Game
                 DeveloperId = gameSubmissionDataModel.DeveloperId,
                 CodeGenre = gameSubmissionDataModel.CodeGenre,
                 DateTimeCreated = gameSubmissionDataModel.DateTimeCreated,
+                DateTimeCreated = gameSubmissionDataModel.DateTimeCreated,
                 DateTimeUpdated = gameSubmissionDataModel.DateTimeUpdated,
 
             };
@@ -28,7 +29,7 @@ namespace VideoGameOnlineShopDomain.Helpers.Game
         {
             GameSubmissionDataModel gameSubmissionDataModel = new GameSubmissionDataModel
             {
-                Name = game.Name,
+                Id = game.Id,                Name = game.Name,
                 Description = game.Description,
                 MatureRating = game.MatureRating,
                 Rating = game.Rating,

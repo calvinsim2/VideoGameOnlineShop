@@ -26,7 +26,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllGamesAsync()
         {
-            var games = await _gameService.GetAllExistingGamesAsync();
+            var games = await _gameApplicationService.GetAllGamesAsync();
             return Ok(games);
         }
 

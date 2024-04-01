@@ -16,6 +16,16 @@ namespace VideoGameOnlineShopApplication.Services
             _gameService = gameService;
         }
 
+        public async Task<IEnumerable<GameApplicationViewModel>> GetAllGamesAsync()
+        {
+            IEnumerable<GameSubmissionDataModel> gameSubmissionDataModels = await _gameService.GetAllExistingGamesAsync();
+
+            List<GameApplicationViewModel> gameApplicationViewModels = MapMultipleGameRecordToGameDataModel(gameSubmissionDataModels).ToList();
+
+            return gameApplicationViewModels;
+
+        }
+
         public async Task<GameApplicationViewModel> GetExplicitGameAsync(Guid id)
         {
             GameSubmissionDataModel gameSubmissionDataModel = await _gameService.GetExplicitGameAsync(id);
@@ -28,6 +38,25 @@ namespace VideoGameOnlineShopApplication.Services
         {
             GameSubmissionDataModel gameSubmissionDataModel = GameApplicationMapper.MapGameDtoToGameDataModel(gameSubmissionDto);
             await _gameService.AddGameAsync(gameSubmissionDataModel);
+        }
+
+
+        public IEnumerable<GameApplicationViewModel> MapMultipleGameRecordToGameDataModel(IEnumerable<GameSubmissionDataModel> gameSubmissionDataModels)
+        {
+            if (gameSubmissionDataModels is null || !gameSubmissionDataModels.Any())
+            {
+                return new List<GameApplicationViewModel>();
+            }
+
+            List<GameApplicationViewModel> newGameApplicationViewModels = new List<GameApplicationViewModel>();
+
+            foreach (var gameDataModel in gameSubmissionDataModels)
+            {
+                newGameApplicationViewModels.Add(GameApplicationMapper.MapGameDataModelToGameViewModel(gameDataModel));
+            }
+
+            return newGameApplicationViewModels;
+
         }
     }
 }

@@ -5,6 +5,7 @@ namespace VideoGameOnlineShopApplication.Interfaces
 {
     public interface IGameApplicationService
     {
+        Task<IEnumerable<GameApplicationViewModel>> GetAllGamesAsync();
         Task<GameApplicationViewModel> GetExplicitGameAsync(Guid id);
         Task AddGameAsync(GameSubmissionDto gameSubmissionDto);
     }
