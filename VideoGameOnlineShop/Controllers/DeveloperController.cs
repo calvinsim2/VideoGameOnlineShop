@@ -5,6 +5,8 @@ using VideoGameOnlineShopApplication.Models.Dto;
 
 namespace VideoGameOnlineShopApplication.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class DeveloperController : ControllerBase
     {
         private readonly IDeveloperApplicationService _developerApplicationService;
@@ -25,13 +27,14 @@ namespace VideoGameOnlineShopApplication.Controllers
             return Ok(developer);
         }
 
-        [HttpPost]
+        [HttpPost("add")]
         public async Task<IActionResult> AddDeveloperAsync([FromBody] DeveloperSubmissionDto developerSubmissionDto)
         {
             await _developerDtoValidator.ValidateAsync(developerSubmissionDto, options => options.ThrowOnFailures());
             await _developerApplicationService.AddDeveloperAsync(developerSubmissionDto);
             return Ok(developerSubmissionDto);
         }
+
 
     }
 }

@@ -24,7 +24,7 @@ namespace VideoGameOnlineShopApplication.Helpers.Developer
         {
             DeveloperApplicationViewModel developerSubmissionViewModel = new DeveloperApplicationViewModel
             {
-                Id = developerSubmissionDataModel.Id
+                Id = developerSubmissionDataModel.Id,
                 Name = developerSubmissionDataModel.Name,
                 Slogan = developerSubmissionDataModel.Slogan,
                 Logo = developerSubmissionDataModel.Logo,

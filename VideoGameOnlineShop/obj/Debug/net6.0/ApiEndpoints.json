@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.DeveloperController",
+    "Method": "GetDeveloperByIdAsync",
+    "RelativePath": "api/Developer/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.DeveloperController",
+    "Method": "AddDeveloperAsync",
+    "RelativePath": "api/Developer/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "developerSubmissionDto",
+        "Type": "VideoGameOnlineShopApplication.Models.Dto.DeveloperSubmissionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.GameController",
     "Method": "GetAllGamesAsync",
     "RelativePath": "api/Game",
@@ -18,8 +50,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "game",
-        "Type": "VideoGameOnlineShopDomain.DomainModels.Game",
+        "Name": "gameSubmissionDto",
+        "Type": "VideoGameOnlineShopApplication.Models.Dto.GameSubmissionDto",
         "IsRequired": true
       }
     ],
@@ -27,7 +59,7 @@
   },
   {
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.GameController",
-    "Method": "GetFoodByIdAsync",
+    "Method": "GetGameByIdAsync",
     "RelativePath": "api/Game/{id}",
     "HttpMethod": "GET",
     "IsController": true,

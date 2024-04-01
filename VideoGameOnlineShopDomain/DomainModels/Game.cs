@@ -10,7 +10,7 @@ namespace VideoGameOnlineShopDomain.DomainModels
         public decimal Rating { get; set; }
         public decimal Price { get; set; }
         public string? ImageUrl { get; set; }
-        public Guid DeveloperId { get; set; }
+        public virtual Guid DeveloperId { get; set; }
         public string CodeGenre { get; set; } = string.Empty;
     }
 }
