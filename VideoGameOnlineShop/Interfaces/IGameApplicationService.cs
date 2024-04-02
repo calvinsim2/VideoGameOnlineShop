@@ -8,5 +8,6 @@ namespace VideoGameOnlineShopApplication.Interfaces
         Task<IEnumerable<GameApplicationViewModel>> GetAllGamesAsync();
         Task<GameApplicationViewModel> GetExplicitGameAsync(Guid id);
         Task AddGameAsync(GameSubmissionDto gameSubmissionDto);
+        Task DeleteSelectedGameAsync(Guid id);
     }
 }

@@ -4,7 +4,9 @@ using VideoGameOnlineShopApplication.Interfaces;
 using VideoGameOnlineShopApplication.Models.Dto;
 using VideoGameOnlineShopApplication.Services;
 using VideoGameOnlineShopApplication.Validators;
+using VideoGameOnlineShopDomain.Common;
 using VideoGameOnlineShopDomain.Interfaces;
+using VideoGameOnlineShopDomain.Interfaces.Common;
 using VideoGameOnlineShopDomain.Services;
 using VideoGameOnlineShopInfrastructure;
 using VideoGameOnlineShopInfrastructure.Repositories;
@@ -27,6 +29,12 @@ builder.Services.AddScoped<IDeveloperService, DeveloperService>();
 
 builder.Services.AddScoped<IGameRepository, GameRepository>();
 builder.Services.AddScoped<IDeveloperRepository, DeveloperRepository>();
+
+#endregion
+
+#region Common Dependency Injections
+
+builder.Services.AddScoped<ICommonUtilityMethods, CommonUtilityMethods>();
 
 #endregion
 

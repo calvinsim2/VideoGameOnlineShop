@@ -40,6 +40,11 @@ namespace VideoGameOnlineShopApplication.Services
             await _gameService.AddGameAsync(gameSubmissionDataModel);
         }
 
+        public async Task DeleteSelectedGameAsync(Guid id)
+        {
+            await _gameService.DeleteSelectedGameAsync(id);
+        }
+
 
         public IEnumerable<GameApplicationViewModel> MapMultipleGameRecordToGameDataModel(IEnumerable<GameSubmissionDataModel> gameSubmissionDataModels)
         {

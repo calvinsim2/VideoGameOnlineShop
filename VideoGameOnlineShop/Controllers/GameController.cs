@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using VideoGameOnlineShopApplication.Interfaces;
 using VideoGameOnlineShopApplication.Models.Dto;
-using VideoGameOnlineShopDomain.Interfaces;
+using VideoGameOnlineShopDomain.Interfaces.Common;
 
 namespace VideoGameOnlineShopApplication.Controllers
 {
@@ -10,17 +10,16 @@ namespace VideoGameOnlineShopApplication.Controllers
     [ApiController]
     public class GameController : ControllerBase
     {
-        private readonly IGameService _gameService;
         private readonly IGameApplicationService _gameApplicationService;
         private readonly IValidator<GameSubmissionDto> _gameDtoValidator;
-
-        public GameController(IGameService gameService,
-                              IGameApplicationService gameApplicationService,
-                              IValidator<GameSubmissionDto> gameDtoValidator)
+        private readonly ICommonUtilityMethods _commonUtilityMethods;
+        public GameController(IGameApplicationService gameApplicationService,
+                              IValidator<GameSubmissionDto> gameDtoValidator,
+                              ICommonUtilityMethods commonUtilityMethods)
         {
-            _gameService = gameService;
             _gameApplicationService = gameApplicationService;
             _gameDtoValidator = gameDtoValidator;
+            _commonUtilityMethods = commonUtilityMethods;
         }
 
         [HttpGet]
@@ -33,7 +32,8 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetGameByIdAsync(string id)
         {
-            var game = await _gameApplicationService.GetExplicitGameAsync(Guid.Parse(id));
+            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            var game = await _gameApplicationService.GetExplicitGameAsync(parseId);
 
             return Ok(game);
         }
@@ -47,9 +47,10 @@ namespace VideoGameOnlineShopApplication.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteExistingFoodAsync(string id)
+        public async Task<IActionResult> DeleteExistingGameAsync(string id)
         {
-            await _gameService.DeleteSelectedGameAsync(Guid.Parse(id));
+            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            await _gameApplicationService.DeleteSelectedGameAsync(parseId);
             return Ok();
         }
     }

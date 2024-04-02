@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.DeveloperController",
+    "Method": "DeleteExistingGameAsync",
+    "RelativePath": "api/Developer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.DeveloperController",
     "Method": "AddDeveloperAsync",
     "RelativePath": "api/Developer/add",
     "HttpMethod": "POST",
@@ -75,7 +91,7 @@
   },
   {
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.GameController",
-    "Method": "DeleteExistingFoodAsync",
+    "Method": "DeleteExistingGameAsync",
     "RelativePath": "api/Game/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,

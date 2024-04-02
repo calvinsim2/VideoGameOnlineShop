@@ -1,4 +1,5 @@
-﻿using VideoGameOnlineShopDomain.DataModels;
+﻿using System.Net;
+using VideoGameOnlineShopDomain.DataModels;
 using VideoGameOnlineShopDomain.DomainModels;
 using VideoGameOnlineShopDomain.Helpers.Developer;
 using VideoGameOnlineShopDomain.Interfaces;
@@ -19,7 +20,7 @@ namespace VideoGameOnlineShopDomain.Services
 
         public async Task<DeveloperSubmissionDataModel> GetExplicitDeveloperAsync(Guid id)
         {
-            Developer? developer = await _developerRepository.GetByIdAsync(id, false) ?? new Developer();
+            Developer? developer = await _developerRepository.GetByIdAsync(id, false) ?? throw new HttpRequestException("Developer not found", null, HttpStatusCode.NotFound);
 
             DeveloperSubmissionDataModel developerSubmissionDataModel = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developer);
             return developerSubmissionDataModel;
@@ -36,6 +37,18 @@ namespace VideoGameOnlineShopDomain.Services
             Developer developer = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developerSubmissionDataModel);
 
             await _developerRepository.AddAsync(developer);
+            await _developerRepository.SaveChangesAsync();
+        }
+
+        public async Task DeleteSelectedDeveloperAsync(Guid id)
+        {
+            var existingDeveloper = await _developerRepository.GetByIdAsync(id, true);
+            if (existingDeveloper is null)
+            {
+                throw new HttpRequestException("Developer not found", null, HttpStatusCode.NotFound);
+            }
+
+            _developerRepository.Remove(existingDeveloper);
             await _developerRepository.SaveChangesAsync();
         }
     }

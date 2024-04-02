@@ -8,5 +8,6 @@ namespace VideoGameOnlineShopDomain.Interfaces
         Task<DeveloperSubmissionDataModel> GetExplicitDeveloperAsync(Guid id);
         Task<IEnumerable<Developer>> GetAllExistingDevelopersAsync();
         Task AddDeveloperAsync(DeveloperSubmissionDataModel developerSubmissionDataModel);
+        Task DeleteSelectedDeveloperAsync(Guid id);
     }
 }

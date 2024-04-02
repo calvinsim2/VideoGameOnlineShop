@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Net;
 using VideoGameOnlineShopDomain.DataModels;
 using VideoGameOnlineShopDomain.DomainModels;
 using VideoGameOnlineShopDomain.Helpers.Game;
@@ -20,7 +20,7 @@ namespace VideoGameOnlineShopDomain.Services
 
         public async Task<GameSubmissionDataModel> GetExplicitGameAsync(Guid id)
         {
-            Game? game = await _gameRepository.GetByIdAsync(id, false) ?? new Game();
+            Game? game = await _gameRepository.GetByIdAsync(id, false) ?? throw new HttpRequestException("Game not found", null, HttpStatusCode.NotFound);
 
             GameSubmissionDataModel gameSubmissionDataModel = GameDomainMapper.MapGameToGameDataModel(game);
             return gameSubmissionDataModel;
@@ -47,7 +47,7 @@ namespace VideoGameOnlineShopDomain.Services
             var existingGame = await _gameRepository.GetByIdAsync(id, true);
             if (existingGame is null)
             {
-                return;
+                throw new HttpRequestException("Game not found", null, HttpStatusCode.NotFound);
             }
 
             _gameRepository.Remove(existingGame);

@@ -17,7 +17,6 @@ namespace VideoGameOnlineShopDomain.Helpers.Game
                 DeveloperId = gameSubmissionDataModel.DeveloperId,
                 CodeGenre = gameSubmissionDataModel.CodeGenre,
                 DateTimeCreated = gameSubmissionDataModel.DateTimeCreated,
-                DateTimeCreated = gameSubmissionDataModel.DateTimeCreated,
                 DateTimeUpdated = gameSubmissionDataModel.DateTimeUpdated,
 
             };
