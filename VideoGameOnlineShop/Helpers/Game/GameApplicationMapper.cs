@@ -6,9 +6,9 @@ namespace VideoGameOnlineShopApplication.Helpers.Game
 {
     public class GameApplicationMapper
     {
-        public static GameSubmissionDataModel MapGameDtoToGameDataModel(GameSubmissionDto gameSubmissionDto)
+        public static GameDataModel MapGameSubmissionDtoToGameDataModel(GameSubmissionDto gameSubmissionDto)
         {
-            GameSubmissionDataModel gameSubmissionDataModel = new GameSubmissionDataModel
+            GameDataModel gameSubmissionDataModel = new GameDataModel
             {
                 Name = gameSubmissionDto.Name,
                 Description = gameSubmissionDto.Description,
@@ -26,7 +26,24 @@ namespace VideoGameOnlineShopApplication.Helpers.Game
             return gameSubmissionDataModel;
         }
 
-        public static GameApplicationViewModel MapGameDataModelToGameViewModel(GameSubmissionDataModel gameSubmissionDataModel)
+        public static GameDataModel MapGameUpdateDtoToGameDataModel(GameUpdateDto gameUpdateDto)
+        {
+            GameDataModel gameSubmissionDataModel = new GameDataModel
+            {
+                Id = Guid.Parse(gameUpdateDto.Id),
+                Name = gameUpdateDto.Name,
+                Description = gameUpdateDto.Description,
+                MatureRating = gameUpdateDto.MatureRating,
+                Price = gameUpdateDto.Price,
+                ImageUrl = gameUpdateDto.ImageUrl ?? null,
+                DeveloperId = Guid.Parse(gameUpdateDto.DeveloperId),
+                CodeGenre = gameUpdateDto.CodeGenre
+            };
+
+            return gameSubmissionDataModel;
+        }
+
+        public static GameApplicationViewModel MapGameDataModelToGameViewModel(GameDataModel gameSubmissionDataModel)
         {
             GameApplicationViewModel gameSubmissionViewModel = new GameApplicationViewModel
             {

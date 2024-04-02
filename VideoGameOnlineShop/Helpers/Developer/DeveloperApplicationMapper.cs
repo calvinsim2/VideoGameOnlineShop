@@ -6,9 +6,9 @@ namespace VideoGameOnlineShopApplication.Helpers.Developer
 {
     public class DeveloperApplicationMapper
     {
-        public static DeveloperSubmissionDataModel MapDeveloperDtoToDeveloperDataModel(DeveloperSubmissionDto developerSubmissionDto)
+        public static DeveloperDataModel MapDeveloperDtoToDeveloperDataModel(DeveloperSubmissionDto developerSubmissionDto)
         {
-            DeveloperSubmissionDataModel developerSubmissionDataModel = new DeveloperSubmissionDataModel
+            DeveloperDataModel developerSubmissionDataModel = new DeveloperDataModel
             {
                 Name = developerSubmissionDto.Name,
                 Slogan = developerSubmissionDto.Slogan,
@@ -20,7 +20,20 @@ namespace VideoGameOnlineShopApplication.Helpers.Developer
             return developerSubmissionDataModel;
         }
 
-        public static DeveloperApplicationViewModel MapDeveloperDataModelToDeveloperViewModel(DeveloperSubmissionDataModel developerSubmissionDataModel)
+        public static DeveloperDataModel MapDeveloperUpdateDtoToDeveloperDataModel(DeveloperUpdateDto developerUpdateDto)
+        {
+            DeveloperDataModel developerSubmissionDataModel = new DeveloperDataModel
+            {
+                Id = Guid.Parse(developerUpdateDto.Id),
+                Name = developerUpdateDto.Name,
+                Slogan = developerUpdateDto.Slogan,
+                Logo = developerUpdateDto.Logo,
+            };
+
+            return developerSubmissionDataModel;
+        }
+
+        public static DeveloperApplicationViewModel MapDeveloperDataModelToDeveloperViewModel(DeveloperDataModel developerSubmissionDataModel)
         {
             DeveloperApplicationViewModel developerSubmissionViewModel = new DeveloperApplicationViewModel
             {

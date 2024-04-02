@@ -11,6 +11,8 @@ namespace VideoGameOnlineShopApplication.Validators
 
             RuleFor(x => x.Description).NotNull().NotEmpty().WithMessage("Description - cannot be empty");
 
+            RuleFor(x => x.MatureRating).NotNull().NotEmpty().WithMessage("Description - cannot be empty");
+
             RuleFor(x => x.Price).NotNull().GreaterThanOrEqualTo(0).WithMessage("Price - Must be 0 or greater");
 
             RuleFor(x => x.DeveloperId).NotNull().WithMessage("Price - Must be 0 or greater");

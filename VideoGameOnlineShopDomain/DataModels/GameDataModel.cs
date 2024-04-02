@@ -2,7 +2,7 @@
 
 namespace VideoGameOnlineShopDomain.DataModels
 {
-    public class DeveloperSubmissionDataModel : Developer
+    public class GameDataModel : Game
     {
     }
 }

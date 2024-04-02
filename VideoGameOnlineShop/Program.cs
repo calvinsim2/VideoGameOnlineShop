@@ -41,7 +41,9 @@ builder.Services.AddScoped<ICommonUtilityMethods, CommonUtilityMethods>();
 #region Validators
 
 builder.Services.AddScoped<IValidator<GameSubmissionDto>, GameSubmissionDtoValidator>();
+builder.Services.AddScoped<IValidator<GameUpdateDto>, GameUpdateDtoValidator>();
 builder.Services.AddScoped<IValidator<DeveloperSubmissionDto>, DeveloperSubmissionDtoValidator>();
+builder.Services.AddScoped<IValidator<DeveloperUpdateDto>, DeveloperUpdateDtoValidator>();
 
 #endregion
 

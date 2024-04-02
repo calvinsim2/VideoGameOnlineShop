@@ -18,7 +18,7 @@ namespace VideoGameOnlineShopApplication.Services
 
         public async Task<IEnumerable<GameApplicationViewModel>> GetAllGamesAsync()
         {
-            IEnumerable<GameSubmissionDataModel> gameSubmissionDataModels = await _gameService.GetAllExistingGamesAsync();
+            IEnumerable<GameDataModel> gameSubmissionDataModels = await _gameService.GetAllExistingGamesAsync();
 
             List<GameApplicationViewModel> gameApplicationViewModels = MapMultipleGameRecordToGameDataModel(gameSubmissionDataModels).ToList();
 
@@ -28,7 +28,7 @@ namespace VideoGameOnlineShopApplication.Services
 
         public async Task<GameApplicationViewModel> GetExplicitGameAsync(Guid id)
         {
-            GameSubmissionDataModel gameSubmissionDataModel = await _gameService.GetExplicitGameAsync(id);
+            GameDataModel gameSubmissionDataModel = await _gameService.GetExplicitGameAsync(id);
 
             GameApplicationViewModel gameApplicationViewModel = GameApplicationMapper.MapGameDataModelToGameViewModel(gameSubmissionDataModel);
             return gameApplicationViewModel;
@@ -36,8 +36,14 @@ namespace VideoGameOnlineShopApplication.Services
 
         public async Task AddGameAsync(GameSubmissionDto gameSubmissionDto)
         {
-            GameSubmissionDataModel gameSubmissionDataModel = GameApplicationMapper.MapGameDtoToGameDataModel(gameSubmissionDto);
+            GameDataModel gameSubmissionDataModel = GameApplicationMapper.MapGameSubmissionDtoToGameDataModel(gameSubmissionDto);
             await _gameService.AddGameAsync(gameSubmissionDataModel);
+        }
+
+        public async Task UpdateSelectedGameAsync(GameUpdateDto gameUpdateDto)
+        {
+            GameDataModel gameSubmissionDataModel = GameApplicationMapper.MapGameUpdateDtoToGameDataModel(gameUpdateDto);
+            await _gameService.UpdateSelectedGameAsync(gameSubmissionDataModel);
         }
 
         public async Task DeleteSelectedGameAsync(Guid id)
@@ -45,8 +51,7 @@ namespace VideoGameOnlineShopApplication.Services
             await _gameService.DeleteSelectedGameAsync(id);
         }
 
-
-        public IEnumerable<GameApplicationViewModel> MapMultipleGameRecordToGameDataModel(IEnumerable<GameSubmissionDataModel> gameSubmissionDataModels)
+        public IEnumerable<GameApplicationViewModel> MapMultipleGameRecordToGameDataModel(IEnumerable<GameDataModel> gameSubmissionDataModels)
         {
             if (gameSubmissionDataModels is null || !gameSubmissionDataModels.Any())
             {

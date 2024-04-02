@@ -11,15 +11,18 @@ namespace VideoGameOnlineShopApplication.Controllers
     public class DeveloperController : ControllerBase
     {
         private readonly IDeveloperApplicationService _developerApplicationService;
-        private readonly IValidator<DeveloperSubmissionDto> _developerDtoValidator;
+        private readonly IValidator<DeveloperSubmissionDto> _developerSubmissionDtoValidator;
+        private readonly IValidator<DeveloperUpdateDto> _developerUpdateDtoValidator;
         private readonly ICommonUtilityMethods _commonUtilityMethods;
 
         public DeveloperController(IDeveloperApplicationService developerApplicationService,
-                                   IValidator<DeveloperSubmissionDto> developerDtoValidator,
+                                   IValidator<DeveloperSubmissionDto> developerSubmissionDtoValidator,
+                                   IValidator<DeveloperUpdateDto> developerUpdateDtoValidator,
                                    ICommonUtilityMethods commonUtilityMethods)
         {
             _developerApplicationService = developerApplicationService;
-            _developerDtoValidator = developerDtoValidator;
+            _developerSubmissionDtoValidator = developerSubmissionDtoValidator;
+            _developerUpdateDtoValidator = developerUpdateDtoValidator;
             _commonUtilityMethods = commonUtilityMethods;
         }
 
@@ -35,9 +38,17 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpPost("add")]
         public async Task<IActionResult> AddDeveloperAsync([FromBody] DeveloperSubmissionDto developerSubmissionDto)
         {
-            await _developerDtoValidator.ValidateAsync(developerSubmissionDto, options => options.ThrowOnFailures());
+            await _developerSubmissionDtoValidator.ValidateAsync(developerSubmissionDto, options => options.ThrowOnFailures());
             await _developerApplicationService.AddDeveloperAsync(developerSubmissionDto);
-            return Ok(developerSubmissionDto);
+            return Ok();
+        }
+
+        [HttpPost("update")]
+        public async Task<IActionResult> UpdateDeveloperAsync([FromBody] DeveloperUpdateDto developerUpdateDto)
+        {
+            await _developerUpdateDtoValidator.ValidateAsync(developerUpdateDto, options => options.ThrowOnFailures());
+            await _developerApplicationService.UpdateSelectedDeveloperAsync(developerUpdateDto);
+            return Ok();
         }
 
         [HttpDelete("{id}")]

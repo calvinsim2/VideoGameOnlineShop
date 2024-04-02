@@ -11,14 +11,17 @@ namespace VideoGameOnlineShopApplication.Controllers
     public class GameController : ControllerBase
     {
         private readonly IGameApplicationService _gameApplicationService;
-        private readonly IValidator<GameSubmissionDto> _gameDtoValidator;
+        private readonly IValidator<GameSubmissionDto> _gameSubmissionDtoValidator;
+        private readonly IValidator<GameUpdateDto> _gameUpdateDtoValidator;
         private readonly ICommonUtilityMethods _commonUtilityMethods;
         public GameController(IGameApplicationService gameApplicationService,
-                              IValidator<GameSubmissionDto> gameDtoValidator,
+                              IValidator<GameSubmissionDto> gameSubmissionDtoValidator,
+                              IValidator<GameUpdateDto> gameUpdateDtoValidator,
                               ICommonUtilityMethods commonUtilityMethods)
         {
             _gameApplicationService = gameApplicationService;
-            _gameDtoValidator = gameDtoValidator;
+            _gameSubmissionDtoValidator = gameSubmissionDtoValidator;
+            _gameUpdateDtoValidator = gameUpdateDtoValidator;
             _commonUtilityMethods = commonUtilityMethods;
         }
 
@@ -41,9 +44,17 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpPost]
         public async Task<IActionResult> AddGameAsync([FromBody] GameSubmissionDto gameSubmissionDto)
         {
-            await _gameDtoValidator.ValidateAsync(gameSubmissionDto, options => options.ThrowOnFailures());
+            await _gameSubmissionDtoValidator.ValidateAsync(gameSubmissionDto, options => options.ThrowOnFailures());
             await _gameApplicationService.AddGameAsync(gameSubmissionDto);
             return Ok(gameSubmissionDto);
+        }
+
+        [HttpPost("update")]
+        public async Task<IActionResult> UpdateGameAsync([FromBody] GameUpdateDto gameUpdateDto)
+        {
+            await _gameUpdateDtoValidator.ValidateAsync(gameUpdateDto, options => options.ThrowOnFailures());
+            await _gameApplicationService.UpdateSelectedGameAsync(gameUpdateDto);
+            return Ok();
         }
 
         [HttpDelete("{id}")]

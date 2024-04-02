@@ -48,6 +48,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.DeveloperController",
+    "Method": "UpdateDeveloperAsync",
+    "RelativePath": "api/Developer/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "developerUpdateDto",
+        "Type": "VideoGameOnlineShopApplication.Models.Dto.DeveloperUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.GameController",
     "Method": "GetAllGamesAsync",
     "RelativePath": "api/Game",

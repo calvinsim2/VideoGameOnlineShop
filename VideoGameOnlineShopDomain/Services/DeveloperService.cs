@@ -18,12 +18,12 @@ namespace VideoGameOnlineShopDomain.Services
             _developerRepository = developerRepository;
         }
 
-        public async Task<DeveloperSubmissionDataModel> GetExplicitDeveloperAsync(Guid id)
+        public async Task<DeveloperDataModel> GetExplicitDeveloperAsync(Guid id)
         {
             Developer? developer = await _developerRepository.GetByIdAsync(id, false) ?? throw new HttpRequestException("Developer not found", null, HttpStatusCode.NotFound);
 
-            DeveloperSubmissionDataModel developerSubmissionDataModel = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developer);
-            return developerSubmissionDataModel;
+            DeveloperDataModel developerDataModel = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developer);
+            return developerDataModel;
         }
 
         public async Task<IEnumerable<Developer>> GetAllExistingDevelopersAsync()
@@ -32,11 +32,22 @@ namespace VideoGameOnlineShopDomain.Services
             return developers;
         }
 
-        public async Task AddDeveloperAsync(DeveloperSubmissionDataModel developerSubmissionDataModel)
+        public async Task AddDeveloperAsync(DeveloperDataModel developerDataModel)
         {
-            Developer developer = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developerSubmissionDataModel);
+            Developer developer = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developerDataModel);
 
             await _developerRepository.AddAsync(developer);
+            await _developerRepository.SaveChangesAsync();
+        }
+
+        public async Task UpdateSelectedDeveloperAsync(DeveloperDataModel developerDataModel)
+        {
+            Developer? developer = await _developerRepository.GetByIdAsync(developerDataModel.Id, false) 
+                                    ?? throw new HttpRequestException("Developer not found", null, HttpStatusCode.NotFound);
+
+            MapDataToNewDeveloperForUpdate(developerDataModel, developer);
+
+            _developerRepository.Update(developer);
             await _developerRepository.SaveChangesAsync();
         }
 
@@ -51,5 +62,14 @@ namespace VideoGameOnlineShopDomain.Services
             _developerRepository.Remove(existingDeveloper);
             await _developerRepository.SaveChangesAsync();
         }
+
+
+        public static void MapDataToNewDeveloperForUpdate(DeveloperDataModel incomingDeveloperDataModel, Developer existingDeveloper)
+        {
+            existingDeveloper.Name = incomingDeveloperDataModel.Name;
+            existingDeveloper.Slogan = incomingDeveloperDataModel.Slogan;
+            existingDeveloper.Logo = incomingDeveloperDataModel.Logo;
+            existingDeveloper.DateTimeUpdated = DateTimeOffset.Now;
+        } 
     }
 }

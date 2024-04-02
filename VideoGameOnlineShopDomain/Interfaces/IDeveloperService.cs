@@ -5,9 +5,10 @@ namespace VideoGameOnlineShopDomain.Interfaces
 {
     public interface IDeveloperService
     {
-        Task<DeveloperSubmissionDataModel> GetExplicitDeveloperAsync(Guid id);
+        Task<DeveloperDataModel> GetExplicitDeveloperAsync(Guid id);
         Task<IEnumerable<Developer>> GetAllExistingDevelopersAsync();
-        Task AddDeveloperAsync(DeveloperSubmissionDataModel developerSubmissionDataModel);
+        Task AddDeveloperAsync(DeveloperDataModel developerSubmissionDataModel);
+        Task UpdateSelectedDeveloperAsync(DeveloperDataModel developerDataModel);
         Task DeleteSelectedDeveloperAsync(Guid id);
     }
 }

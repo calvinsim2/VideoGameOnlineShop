@@ -7,6 +7,7 @@ namespace VideoGameOnlineShopApplication.Interfaces
     {
         Task<DeveloperApplicationViewModel> GetExplicitDeveloperAsync(Guid id);
         Task AddDeveloperAsync(DeveloperSubmissionDto developerSubmissionDto);
+        Task UpdateSelectedDeveloperAsync(DeveloperUpdateDto developerUpdateDto);
         Task DeleteSelectedDeveloperAsync(Guid id);
     }
 }

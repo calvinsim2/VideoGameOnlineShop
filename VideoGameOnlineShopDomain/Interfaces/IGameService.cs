@@ -4,9 +4,10 @@ namespace VideoGameOnlineShopDomain.Interfaces
 {
     public interface IGameService
     {
-        Task<GameSubmissionDataModel> GetExplicitGameAsync(Guid id);
-        Task<IEnumerable<GameSubmissionDataModel>> GetAllExistingGamesAsync();
-        Task AddGameAsync(GameSubmissionDataModel gameSubmissionDataModel);
+        Task<GameDataModel> GetExplicitGameAsync(Guid id);
+        Task<IEnumerable<GameDataModel>> GetAllExistingGamesAsync();
+        Task AddGameAsync(GameDataModel gameSubmissionDataModel);
+        Task UpdateSelectedGameAsync(GameDataModel gameDataModel);
         Task DeleteSelectedGameAsync(Guid id);
     }
 }

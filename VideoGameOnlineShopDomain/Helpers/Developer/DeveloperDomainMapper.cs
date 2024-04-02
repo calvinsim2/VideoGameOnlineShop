@@ -4,7 +4,7 @@ namespace VideoGameOnlineShopDomain.Helpers.Developer
 {
     public class DeveloperDomainMapper
     {
-        public static DomainModels.Developer MapDeveloperToDeveloperDataModel(DeveloperSubmissionDataModel developerSubmissionDataModel)
+        public static DomainModels.Developer MapDeveloperToDeveloperDataModel(DeveloperDataModel developerSubmissionDataModel)
         {
             DomainModels.Developer developer = new DomainModels.Developer
             {
@@ -17,9 +17,9 @@ namespace VideoGameOnlineShopDomain.Helpers.Developer
 
             return developer;
         }
-        public static DeveloperSubmissionDataModel MapDeveloperToDeveloperDataModel(DomainModels.Developer developer)
+        public static DeveloperDataModel MapDeveloperToDeveloperDataModel(DomainModels.Developer developer)
         {
-            DeveloperSubmissionDataModel developerSubmissionDataModel = new DeveloperSubmissionDataModel
+            DeveloperDataModel developerSubmissionDataModel = new DeveloperDataModel
             {
                 Name = developer.Name,
                 Slogan = developer.Slogan,

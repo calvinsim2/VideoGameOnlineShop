@@ -19,6 +19,8 @@ namespace VideoGameOnlineShopApplication.Validators
 
             RuleFor(x => x.DeveloperId).NotNull().WithMessage("Price - Must be 0 or greater");
 
+            RuleFor(x => x.MatureRating).NotNull().NotEmpty().WithMessage("MatureRating - cannot be empty");
+
             RuleFor(x => x.CodeGenre).NotNull().WithMessage("CodeGenre - Must not be null");
 
             RuleFor(x => x.CodeGenre).Must(BeAbleToSplitByComma).WithMessage("CodeGenre - Input string must be able to split by comma");
