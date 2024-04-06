@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using VideoGameOnlineShopDomain.DomainModels;
+using VideoGameOnlineShopDomain.DomainModels.Common.CodesTable;
 using VideoGameOnlineShopInfrastructure.EntityConfigurations;
+using VideoGameOnlineShopInfrastructure.EntityConfigurations.CodesTable;
 
 namespace VideoGameOnlineShopInfrastructure
 {
@@ -15,11 +17,13 @@ namespace VideoGameOnlineShopInfrastructure
         // Convert Models to DbSets, queries against this DbSet will be translated to queries against database.
         public DbSet<Game> Game { get; set; } = null!;
         public DbSet<Developer> Developer { get; set; } = null!;
+        public DbSet<CodeDecodeMatureRating> CodeDecodeMatureRating { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new GameEntityConfiguration());
             modelBuilder.ApplyConfiguration(new DeveloperEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new CodeDecodeMatureRatingConfiguation());
         }
     }
 }

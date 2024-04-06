@@ -120,5 +120,52 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.GameController",
+    "Method": "UpdateGameAsync",
+    "RelativePath": "api/Game/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameUpdateDto",
+        "Type": "VideoGameOnlineShopApplication.Models.Dto.GameUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetExplicitCodeMatureRatingAsync",
+    "RelativePath": "matureRating",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetExplicitCodeMatureRatingAsync",
+    "RelativePath": "matureRating/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

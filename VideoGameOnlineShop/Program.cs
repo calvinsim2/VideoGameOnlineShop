@@ -5,47 +5,19 @@ using VideoGameOnlineShopApplication.Models.Dto;
 using VideoGameOnlineShopApplication.Services;
 using VideoGameOnlineShopApplication.Validators;
 using VideoGameOnlineShopDomain.Common;
+using VideoGameOnlineShopDomain.DomainModels.Common.CodesTable;
 using VideoGameOnlineShopDomain.Interfaces;
+using VideoGameOnlineShopDomain.Interfaces.CodesTable;
 using VideoGameOnlineShopDomain.Interfaces.Common;
 using VideoGameOnlineShopDomain.Services;
 using VideoGameOnlineShopInfrastructure;
 using VideoGameOnlineShopInfrastructure.Repositories;
+using VideoGameOnlineShopInfrastructure.Repositories.CodesTable;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Dependency Injections 
-
-#region Services Dependency Injections
-
-builder.Services.AddScoped<IGameApplicationService, GameApplicationService>();
-builder.Services.AddScoped<IDeveloperApplicationService, DeveloperApplicationService>();
-
-builder.Services.AddScoped<IGameService, GameService>();
-builder.Services.AddScoped<IDeveloperService, DeveloperService>();
-
-#endregion
-
-#region Repository Dependency Injections
-
-builder.Services.AddScoped<IGameRepository, GameRepository>();
-builder.Services.AddScoped<IDeveloperRepository, DeveloperRepository>();
-
-#endregion
-
-#region Common Dependency Injections
-
-builder.Services.AddScoped<ICommonUtilityMethods, CommonUtilityMethods>();
-
-#endregion
-
-#region Validators
-
-builder.Services.AddScoped<IValidator<GameSubmissionDto>, GameSubmissionDtoValidator>();
-builder.Services.AddScoped<IValidator<GameUpdateDto>, GameUpdateDtoValidator>();
-builder.Services.AddScoped<IValidator<DeveloperSubmissionDto>, DeveloperSubmissionDtoValidator>();
-builder.Services.AddScoped<IValidator<DeveloperUpdateDto>, DeveloperUpdateDtoValidator>();
-
-#endregion
+// Configure your services here
+ConfigureServices(builder.Services);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
@@ -103,3 +75,44 @@ app.MapControllers();
 app.MapRazorPages();
 
 app.Run();
+
+
+// ConfigureServices method
+static void ConfigureServices(IServiceCollection services)
+{
+    // Dependency Injections 
+
+    #region Services Dependency Injections
+
+    services.AddScoped<IGameApplicationService, GameApplicationService>();
+    services.AddScoped<IDeveloperApplicationService, DeveloperApplicationService>();
+    services.AddScoped<ICodesTableApplicationService, CodesTableApplicationService>();
+
+    services.AddScoped<IGameService, GameService>();
+    services.AddScoped<IDeveloperService, DeveloperService>();
+
+    #endregion
+
+    #region Repository Dependency Injections
+
+    services.AddScoped<IGameRepository, GameRepository>();
+    services.AddScoped<IDeveloperRepository, DeveloperRepository>();
+    services.AddScoped<ICodesTableRepository<CodeDecodeMatureRating>, CodesTableRepository<CodeDecodeMatureRating>>();
+
+    #endregion
+
+    #region Common Dependency Injections
+
+    services.AddScoped<ICommonUtilityMethods, CommonUtilityMethods>();
+
+    #endregion
+
+    #region Validators
+
+    services.AddScoped<IValidator<GameSubmissionDto>, GameSubmissionDtoValidator>();
+    services.AddScoped<IValidator<GameUpdateDto>, GameUpdateDtoValidator>();
+    services.AddScoped<IValidator<DeveloperSubmissionDto>, DeveloperSubmissionDtoValidator>();
+    services.AddScoped<IValidator<DeveloperUpdateDto>, DeveloperUpdateDtoValidator>();
+
+    #endregion
+}
