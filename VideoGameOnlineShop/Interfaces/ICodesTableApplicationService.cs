@@ -1,4 +1,5 @@
-﻿using VideoGameOnlineShopApplication.Models.ViewModels;
+﻿using VideoGameOnlineShopApplication.Models.Dto.CodesTable;
+using VideoGameOnlineShopApplication.Models.ViewModels;
 
 namespace VideoGameOnlineShopApplication.Interfaces
 {
@@ -6,5 +7,6 @@ namespace VideoGameOnlineShopApplication.Interfaces
     {
         Task<IEnumerable<CodesTableViewModel>> GetAllCodeMatureRatingAsync();
         Task<CodesTableViewModel> GetCodeMatureRatingByCodeAsync(string code);
+        Task AddCodeMatureRatingAsync(CodesTableDto codesTableDto);
     }
 }

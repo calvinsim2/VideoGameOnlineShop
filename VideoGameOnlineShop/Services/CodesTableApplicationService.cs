@@ -1,6 +1,8 @@
-﻿using System.Net;
+﻿using AutoMapper;
+using System.Net;
 using VideoGameOnlineShopApplication.Helpers.CodesTable;
 using VideoGameOnlineShopApplication.Interfaces;
+using VideoGameOnlineShopApplication.Models.Dto.CodesTable;
 using VideoGameOnlineShopApplication.Models.ViewModels;
 using VideoGameOnlineShopDomain.DomainModels.Common;
 using VideoGameOnlineShopDomain.DomainModels.Common.CodesTable;
@@ -10,10 +12,12 @@ namespace VideoGameOnlineShopApplication.Services
 {
     public class CodesTableApplicationService : ICodesTableApplicationService
     {
+        private readonly IMapper _mapper;
         private readonly ICodesTableRepository<CodeDecodeMatureRating> _codeDecodeMatureRatingRepository;
 
-        public CodesTableApplicationService(ICodesTableRepository<CodeDecodeMatureRating> codeDecodeMatureRatingRepository)
+        public CodesTableApplicationService(IMapper mapper, ICodesTableRepository<CodeDecodeMatureRating> codeDecodeMatureRatingRepository)
         {
+            _mapper = mapper;
             _codeDecodeMatureRatingRepository = codeDecodeMatureRatingRepository;
         }
 
@@ -21,7 +25,7 @@ namespace VideoGameOnlineShopApplication.Services
         {
             IEnumerable<CodeDecodeMatureRating> codeMatureRatings = await _codeDecodeMatureRatingRepository.FindAllCodesAsync();
 
-            IEnumerable<CodesTableViewModel> codesTableViewModels = MapMultipleGameRecordToGameDataModel(codeMatureRatings);
+            IEnumerable<CodesTableViewModel> codesTableViewModels = MapMultipleCodesTableRecordToCodesTableViewModel(codeMatureRatings);
 
             return codesTableViewModels;
         }
@@ -36,8 +40,17 @@ namespace VideoGameOnlineShopApplication.Services
             return codesTableViewModel;
         }
 
+        public async Task AddCodeMatureRatingAsync(CodesTableDto codesTableDto)
+        {
+            CodesTableBase codesTableBase = CodesTableApplicationMapper.MapCodesTableDtoToCodesTableBase(codesTableDto);
+            CodeDecodeMatureRating codeDecodeMatureRating = _mapper.Map<CodeDecodeMatureRating>(codesTableBase);
+            await _codeDecodeMatureRatingRepository.AddCodeAsync(codeDecodeMatureRating);
+            await _codeDecodeMatureRatingRepository.SaveChangesAsync();
 
-        public IEnumerable<CodesTableViewModel> MapMultipleGameRecordToGameDataModel<T>(IEnumerable<T> codesTableRecords) where T : CodesTableBase
+        }
+
+
+        public IEnumerable<CodesTableViewModel> MapMultipleCodesTableRecordToCodesTableViewModel<T>(IEnumerable<T> codesTableRecords) where T : CodesTableBase
         {
             if (codesTableRecords is null || !codesTableRecords.Any())
             {

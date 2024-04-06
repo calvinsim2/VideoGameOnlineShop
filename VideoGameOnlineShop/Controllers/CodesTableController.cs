@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using VideoGameOnlineShopApplication.Interfaces;
+using VideoGameOnlineShopApplication.Models.Dto.CodesTable;
 using VideoGameOnlineShopDomain.Interfaces.Common;
 
 namespace VideoGameOnlineShopApplication.Controllers
@@ -24,12 +25,20 @@ namespace VideoGameOnlineShopApplication.Controllers
             return Ok(codeMatureRatings);
         }
 
-        [HttpGet("matureRating/{id}")]
+        [HttpGet("matureRating/{code}")]
         public async Task<IActionResult> GetExplicitCodeMatureRatingAsync(string code)
         {
             var codeMatureRating = await _codesTableApplicationService.GetCodeMatureRatingByCodeAsync(code);
 
             return Ok(codeMatureRating);
+        }
+
+        [HttpPost("matureRating")]
+        public async Task<IActionResult> AddCodeMatureRatingAsync(CodesTableDto codesTableDto)
+        {
+            await _codesTableApplicationService.AddCodeMatureRatingAsync(codesTableDto);
+
+            return Ok();
         }
     }
 }

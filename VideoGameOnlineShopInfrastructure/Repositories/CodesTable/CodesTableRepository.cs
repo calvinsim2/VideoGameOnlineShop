@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using VideoGameOnlineShopDomain.DomainModels.Common;
 using VideoGameOnlineShopDomain.Interfaces.CodesTable;
-using VideoGameOnlineShopInfrastructure.Repositories.Common;
 
 namespace VideoGameOnlineShopInfrastructure.Repositories.CodesTable
 {
@@ -24,6 +22,16 @@ namespace VideoGameOnlineShopInfrastructure.Repositories.CodesTable
         {
             var codeRecord = await _context.Set<T>().Where(c => c.Code == code).FirstOrDefaultAsync();
             return codeRecord;
+        }
+
+        public async Task AddCodeAsync(T codesTable)
+        {
+            await _context.Set<T>().AddAsync(codesTable);
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 

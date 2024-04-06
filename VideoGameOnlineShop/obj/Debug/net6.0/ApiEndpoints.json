@@ -149,8 +149,29 @@
   },
   {
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "AddCodeMatureRatingAsync",
+    "RelativePath": "matureRating",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DecodeValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
     "Method": "GetExplicitCodeMatureRatingAsync",
-    "RelativePath": "matureRating/{id}",
+    "RelativePath": "matureRating/{code}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -158,11 +179,6 @@
       {
         "Name": "code",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "id",
-        "Type": "",
         "IsRequired": true
       }
     ],

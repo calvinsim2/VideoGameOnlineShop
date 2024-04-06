@@ -2,7 +2,7 @@
 
 namespace VideoGameOnlineShopDomain.DomainModels.Common
 {
-    public abstract class CodesTableBase : ICodesTableBase
+    public class CodesTableBase : ICodesTableBase
     {
         public Guid Id { get; set; }
         public string Code { get; set; } = string.Empty;
