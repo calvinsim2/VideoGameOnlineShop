@@ -98,6 +98,7 @@ static void ConfigureServices(IServiceCollection services)
     services.AddScoped<IGameRepository, GameRepository>();
     services.AddScoped<IDeveloperRepository, DeveloperRepository>();
     services.AddScoped<ICodesTableRepository<CodeDecodeMatureRating>, CodesTableRepository<CodeDecodeMatureRating>>();
+    services.AddScoped<ICodesTableRepository<CodeDecodeGenre>, CodesTableRepository<CodeDecodeGenre>>();
 
     #endregion
 
