@@ -22,6 +22,26 @@ namespace VideoGameOnlineShopInfrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("VideoGameOnlineShopDomain.DomainModels.Common.CodesTable.CodeDecodeGenre", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("UniqueIdentifier")
+                        .HasDefaultValueSql("newsequentialId()");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("DecodeValue")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CodeDecodeGenre");
+                });
+
             modelBuilder.Entity("VideoGameOnlineShopDomain.DomainModels.Common.CodesTable.CodeDecodeMatureRating", b =>
                 {
                     b.Property<Guid>("Id")

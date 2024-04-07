@@ -5,12 +5,13 @@ using VideoGameOnlineShopInfrastructure.EntityConfigurations.Common;
 
 namespace VideoGameOnlineShopInfrastructure.EntityConfigurations.CodesTable
 {
-    public class CodeDecodeMatureRatingConfiguation : IEntityTypeConfiguration<CodeDecodeMatureRating>
+    public class CodeDecodeGenreConfiguration : IEntityTypeConfiguration<CodeDecodeGenre>
     {
-        public void Configure(EntityTypeBuilder<CodeDecodeMatureRating> builder)
+        public void Configure(EntityTypeBuilder<CodeDecodeGenre> builder)
         {
 
             CodesTableExtension.ConfigureBaseEntity(builder);
+
         }
     }
 }

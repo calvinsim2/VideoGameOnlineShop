@@ -1,4 +1,6 @@
-﻿namespace VideoGameOnlineShopDomain.Interfaces.CodesTable
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace VideoGameOnlineShopDomain.Interfaces.CodesTable
 {
     public interface ICodesTableBase
     {
