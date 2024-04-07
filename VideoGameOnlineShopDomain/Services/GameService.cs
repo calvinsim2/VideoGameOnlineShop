@@ -87,7 +87,7 @@ namespace VideoGameOnlineShopDomain.Services
         {
             existingGame.Name = incomingGameDataModel.Name;
             existingGame.Description = incomingGameDataModel.Description;
-            existingGame.MatureRating = incomingGameDataModel.MatureRating;
+            existingGame.CodeMatureRating = incomingGameDataModel.CodeMatureRating;
             existingGame.Price = incomingGameDataModel.Price;
             existingGame.ImageUrl = incomingGameDataModel.ImageUrl;
             existingGame.DeveloperId = incomingGameDataModel.DeveloperId;

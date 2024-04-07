@@ -10,7 +10,7 @@ namespace VideoGameOnlineShopDomain.Helpers.Game
             {
                 Name = gameSubmissionDataModel.Name,
                 Description = gameSubmissionDataModel.Description,
-                MatureRating = gameSubmissionDataModel.MatureRating,
+                CodeMatureRating = gameSubmissionDataModel.CodeMatureRating,
                 Rating = 0,
                 Price = gameSubmissionDataModel.Price,
                 ImageUrl = gameSubmissionDataModel.ImageUrl ?? null,
@@ -30,7 +30,7 @@ namespace VideoGameOnlineShopDomain.Helpers.Game
             {
                 Id = game.Id,                Name = game.Name,
                 Description = game.Description,
-                MatureRating = game.MatureRating,
+                CodeMatureRating = game.CodeMatureRating,
                 Rating = game.Rating,
                 Price = game.Price,
                 ImageUrl = game.ImageUrl ?? null,

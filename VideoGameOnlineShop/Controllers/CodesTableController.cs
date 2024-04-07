@@ -28,7 +28,8 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("matureRating/{code}")]
         public async Task<IActionResult> GetExplicitCodeMatureRatingAsync(string code)
         {
-            var codeMatureRating = await _codesTableApplicationService.GetCodeMatureRatingByCodeAsync(code);
+            string trimAndCapsCode = _commonUtilityMethods.RemoveEmptySpaceAndCapitalizeString(code);
+            var codeMatureRating = await _codesTableApplicationService.GetCodeMatureRatingByCodeAsync(trimAndCapsCode);
 
             return Ok(codeMatureRating);
         }

@@ -18,5 +18,17 @@ namespace VideoGameOnlineShopDomain.Common
 
             return guidId;
         }
+
+        public string RemoveEmptySpaceAndCapitalizeString(string inputString)
+        {
+            string inputStringRemoveEmptySpace = inputString.Replace(" ", string.Empty);
+
+            if (string.IsNullOrEmpty(inputStringRemoveEmptySpace))
+            {
+                throw new HttpRequestException("Code cannot be empty", null, HttpStatusCode.BadRequest);
+            }
+
+            return inputStringRemoveEmptySpace.ToUpper();
+        }
     }
 }

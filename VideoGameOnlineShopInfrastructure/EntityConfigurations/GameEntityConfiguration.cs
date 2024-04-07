@@ -19,7 +19,7 @@ namespace VideoGameOnlineShopInfrastructure.EntityConfigurations
                 .IsRequired(true)
                 .HasColumnType("nvarchar(max)");
 
-            builder.Property(e => e.MatureRating)
+            builder.Property(e => e.CodeMatureRating)
                 .IsRequired(true)
                 .HasColumnType("nvarchar(1)");
 
