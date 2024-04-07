@@ -17,8 +17,10 @@ namespace VideoGameOnlineShopApplication.Controllers
             _commonUtilityMethods = commonUtilityMethods;
         }
 
+        #region CodeDecodeMatureRating
+
         [HttpGet("matureRating")]
-        public async Task<IActionResult> GetExplicitCodeMatureRatingAsync()
+        public async Task<IActionResult> GetAllCodeMatureRatingAsync()
         {
             var codeMatureRatings = await _codesTableApplicationService.GetAllCodeMatureRatingAsync();
 
@@ -41,5 +43,54 @@ namespace VideoGameOnlineShopApplication.Controllers
 
             return Ok();
         }
+
+        [HttpDelete("matureRating")]
+        public async Task<IActionResult> DeleteCodeMatureRatingAsync(string id)
+        {
+            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            await _codesTableApplicationService.DeleteExplicitCodeMatureRatingAsync(parseId);
+
+            return Ok();
+        }
+
+        #endregion
+
+        #region CodeDecodeGenre
+
+        [HttpGet("genre")]
+        public async Task<IActionResult> GetAllCodeGenreAsync()
+        {
+            var codeMatureRatings = await _codesTableApplicationService.GetAllCodeGenreAsync();
+
+            return Ok(codeMatureRatings);
+        }
+
+        [HttpGet("genre/{code}")]
+        public async Task<IActionResult> GetExplicitCodeGenreAsync(string code)
+        {
+            string trimAndCapsCode = _commonUtilityMethods.RemoveEmptySpaceAndCapitalizeString(code);
+            var codeMatureRating = await _codesTableApplicationService.GetCodeGenreByCodeAsync(trimAndCapsCode);
+
+            return Ok(codeMatureRating);
+        }
+
+        [HttpPost("genre")]
+        public async Task<IActionResult> AddCodeGenreAsync(CodesTableDto codesTableDto)
+        {
+            await _codesTableApplicationService.AddCodeGenreAsync(codesTableDto);
+
+            return Ok();
+        }
+
+        [HttpDelete("genre")]
+        public async Task<IActionResult> DeleteCodeGenreAsync(string id)
+        {
+            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            await _codesTableApplicationService.DeleteExplicitCodeGenreAsync(parseId);
+
+            return Ok();
+        }
+
+        #endregion
     }
 }

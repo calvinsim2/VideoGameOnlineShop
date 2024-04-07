@@ -14,13 +14,18 @@ namespace VideoGameOnlineShopApplication.Services
     {
         private readonly IMapper _mapper;
         private readonly ICodesTableRepository<CodeDecodeMatureRating> _codeDecodeMatureRatingRepository;
+        private readonly ICodesTableRepository<CodeDecodeGenre> _codeDecodeGenreRepository;
 
-        public CodesTableApplicationService(IMapper mapper, ICodesTableRepository<CodeDecodeMatureRating> codeDecodeMatureRatingRepository)
+        public CodesTableApplicationService(IMapper mapper, 
+                                            ICodesTableRepository<CodeDecodeMatureRating> codeDecodeMatureRatingRepository,
+                                            ICodesTableRepository<CodeDecodeGenre> codeDecodeGenreRepository)
         {
             _mapper = mapper;
             _codeDecodeMatureRatingRepository = codeDecodeMatureRatingRepository;
+            _codeDecodeGenreRepository = codeDecodeGenreRepository;
         }
 
+        #region CodeDecodeMatureRating
         public async Task<IEnumerable<CodesTableViewModel>> GetAllCodeMatureRatingAsync()
         {
             IEnumerable<CodeDecodeMatureRating> codeMatureRatings = await _codeDecodeMatureRatingRepository.FindAllCodesAsync();
@@ -49,6 +54,59 @@ namespace VideoGameOnlineShopApplication.Services
 
         }
 
+        public async Task DeleteExplicitCodeMatureRatingAsync(Guid id)
+        {
+            CodeDecodeMatureRating codeMatureRating = await _codeDecodeMatureRatingRepository.FindByIdAsync(id) ??
+                                                      throw new HttpRequestException("Code not found", null, HttpStatusCode.NotFound);
+
+            _codeDecodeMatureRatingRepository.DeleteExplicitRecordAsync(codeMatureRating);
+            await _codeDecodeMatureRatingRepository.SaveChangesAsync();
+
+        }
+
+        #endregion
+
+        #region CodeDecodeGenre
+
+        public async Task<IEnumerable<CodesTableViewModel>> GetAllCodeGenreAsync()
+        {
+            IEnumerable<CodeDecodeGenre> codeMatureRatings = await _codeDecodeGenreRepository.FindAllCodesAsync();
+
+            IEnumerable<CodesTableViewModel> codesTableViewModels = MapMultipleCodesTableRecordToCodesTableViewModel(codeMatureRatings);
+
+            return codesTableViewModels;
+        }
+
+        public async Task<CodesTableViewModel> GetCodeGenreByCodeAsync(string code)
+        {
+            CodeDecodeGenre codeGenre = await _codeDecodeGenreRepository.FindByCodeAsync(code) ??
+                                                      throw new HttpRequestException("Code not found", null, HttpStatusCode.NotFound);
+
+            CodesTableViewModel codesTableViewModel = CodesTableApplicationMapper.MapCodesTableToCodesTableViewModel(codeGenre);
+
+            return codesTableViewModel;
+        }
+
+        public async Task AddCodeGenreAsync(CodesTableDto codesTableDto)
+        {
+            CodesTableBase codesTableBase = CodesTableApplicationMapper.MapCodesTableDtoToCodesTableBase(codesTableDto);
+            CodeDecodeGenre codeDecodeGenre = _mapper.Map<CodeDecodeGenre>(codesTableBase);
+            await _codeDecodeGenreRepository.AddCodeAsync(codeDecodeGenre);
+            await _codeDecodeGenreRepository.SaveChangesAsync();
+
+        }
+
+        public async Task DeleteExplicitCodeGenreAsync(Guid id)
+        {
+            CodeDecodeGenre codeGenre = await _codeDecodeGenreRepository.FindByIdAsync(id) ??
+                                                      throw new HttpRequestException("Code not found", null, HttpStatusCode.NotFound);
+
+            _codeDecodeGenreRepository.DeleteExplicitRecordAsync(codeGenre);
+            await _codeDecodeGenreRepository.SaveChangesAsync();
+
+        }
+
+        #endregion
 
         public IEnumerable<CodesTableViewModel> MapMultipleCodesTableRecordToCodesTableViewModel<T>(IEnumerable<T> codesTableRecords) where T : CodesTableBase
         {

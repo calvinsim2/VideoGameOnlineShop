@@ -8,5 +8,10 @@ namespace VideoGameOnlineShopApplication.Interfaces
         Task<IEnumerable<CodesTableViewModel>> GetAllCodeMatureRatingAsync();
         Task<CodesTableViewModel> GetCodeMatureRatingByCodeAsync(string code);
         Task AddCodeMatureRatingAsync(CodesTableDto codesTableDto);
+        Task DeleteExplicitCodeMatureRatingAsync(Guid id);
+        Task<IEnumerable<CodesTableViewModel>> GetAllCodeGenreAsync();
+        Task<CodesTableViewModel> GetCodeGenreByCodeAsync(string code);
+        Task AddCodeGenreAsync(CodesTableDto codesTableDto);
+        Task DeleteExplicitCodeGenreAsync(Guid id);
     }
 }

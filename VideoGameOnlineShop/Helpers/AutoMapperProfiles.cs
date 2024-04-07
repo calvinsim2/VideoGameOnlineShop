@@ -9,6 +9,7 @@ namespace VideoGameOnlineShopApplication.Helpers
         public AutoMapperProfiles()
         {
             CreateMap<CodesTableBase, CodeDecodeMatureRating>();
+            CreateMap<CodesTableBase, CodeDecodeGenre>();
 
         }
     }
