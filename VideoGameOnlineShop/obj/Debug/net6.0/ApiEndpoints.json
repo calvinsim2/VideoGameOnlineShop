@@ -51,7 +51,7 @@
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.DeveloperController",
     "Method": "UpdateDeveloperAsync",
     "RelativePath": "api/Developer/update",
-    "HttpMethod": "POST",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -125,7 +125,7 @@
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.GameController",
     "Method": "UpdateGameAsync",
     "RelativePath": "api/Game/update",
-    "HttpMethod": "POST",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
