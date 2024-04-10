@@ -16,3 +16,21 @@ C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGame
 C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\bin\Debug\net6.0\VideoGameOnlineShopDomain.pdb
 C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGam.80E98289.Up2Date
 C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGameOnlineShopInfrastructure.sourcelink.json
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\bin\Debug\net6.0\VideoGameOnlineShopInfrastructure.deps.json
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\bin\Debug\net6.0\VideoGameOnlineShopInfrastructure.runtimeconfig.json
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\bin\Debug\net6.0\VideoGameOnlineShopInfrastructure.dll
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\bin\Debug\net6.0\VideoGameOnlineShopInfrastructure.pdb
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\bin\Debug\net6.0\VideoGameOnlineShopDomain.dll
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\bin\Debug\net6.0\VideoGameOnlineShopDomain.pdb
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGameOnlineShopInfrastructure.csproj.AssemblyReference.cache
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGameOnlineShopInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGameOnlineShopInfrastructure.AssemblyInfoInputs.cache
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGameOnlineShopInfrastructure.AssemblyInfo.cs
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGameOnlineShopInfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGameOnlineShopInfrastructure.sourcelink.json
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGam.80E98289.Up2Date
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGameOnlineShopInfrastructure.dll
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\refint\VideoGameOnlineShopInfrastructure.dll
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGameOnlineShopInfrastructure.pdb
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\VideoGameOnlineShopInfrastructure.genruntimeconfig.cache
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopInfrastructure\obj\Debug\net6.0\ref\VideoGameOnlineShopInfrastructure.dll

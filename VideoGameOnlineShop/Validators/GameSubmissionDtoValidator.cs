@@ -19,20 +19,10 @@ namespace VideoGameOnlineShopApplication.Validators
 
             RuleFor(x => x.CodeGenre).NotNull().WithMessage("CodeGenre - Must not be null");
 
-            RuleFor(x => x.CodeGenre).Must(BeAbleToSplitByComma).WithMessage("CodeGenre - Input string must be able to split by comma");
-
             RuleFor(x => x.DeveloperId).NotNull().NotEmpty().WithMessage("DeveloperId - Must not be null");
 
             RuleFor(x => x.DeveloperId).Must( x => Guid.TryParse(x, out Guid _)).WithMessage("Please Insert a Valid Guid Format");
 
-            bool BeAbleToSplitByComma(string input)
-            {
-                if (string.IsNullOrWhiteSpace(input))
-                    return false;
-
-                // Check if the string can be split by comma
-                return input.Split(',').Length > 1;
-            }
         }
     }
 }

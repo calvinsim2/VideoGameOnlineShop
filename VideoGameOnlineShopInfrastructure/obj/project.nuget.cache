@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qiNwV556fOR4GEut911hF5UD+BkJZOQdhxUCvLwq80cMzRPtKyns6sR1veaB5ixI+8fXuMnN/H81bxJ5rKNRTA==",
+  "dgSpecHash": "gUrcLIJ/hOeahCdwEIuEPtcTmb+U4KK5JZEOD8o65Fq221kWeptjlUXzNiY16OooLx46xLAUU0/jqXwG+/1qSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj",
+  "projectFilePath": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\calvi\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\calvi\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",

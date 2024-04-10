@@ -49,7 +49,7 @@ namespace VideoGameOnlineShopApplication.Controllers
             return Ok(gameSubmissionDto);
         }
 
-        [HttpPost("update")]
+        [HttpPut("update")]
         public async Task<IActionResult> UpdateGameAsync([FromBody] GameUpdateDto gameUpdateDto)
         {
             await _gameUpdateDtoValidator.ValidateAsync(gameUpdateDto, options => options.ThrowOnFailures());

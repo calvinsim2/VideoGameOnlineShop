@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VideoGameOnlineShopApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01ef04e29e6349f5896673c8f4ecc1925e69d333")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ef14616a7d0f4ac4bc643d503a4b1224db279d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("VideoGameOnlineShopApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VideoGameOnlineShopApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

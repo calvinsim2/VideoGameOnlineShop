@@ -43,7 +43,7 @@ namespace VideoGameOnlineShopApplication.Controllers
             return Ok();
         }
 
-        [HttpPost("update")]
+        [HttpPut("update")]
         public async Task<IActionResult> UpdateDeveloperAsync([FromBody] DeveloperUpdateDto developerUpdateDto)
         {
             await _developerUpdateDtoValidator.ValidateAsync(developerUpdateDto, options => options.ThrowOnFailures());

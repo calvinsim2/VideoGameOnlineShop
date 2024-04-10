@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VideoGameOnlineShopDomain
-build_property.ProjectDir = C:\Users\calvi\Desktop\Programming\Dotnet6Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\
+build_property.ProjectDir = C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
