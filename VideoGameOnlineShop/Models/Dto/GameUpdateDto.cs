@@ -10,5 +10,6 @@
         public string? ImageUrl { get; set; }
         public string DeveloperId { get; set; } = string.Empty;
         public string CodeGenre { get; set; } = string.Empty;
+        public string CodePlatform { get; set; } = string.Empty;
     }
 }

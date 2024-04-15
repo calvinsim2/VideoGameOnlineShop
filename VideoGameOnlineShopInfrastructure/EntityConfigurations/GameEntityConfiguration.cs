@@ -42,6 +42,10 @@ namespace VideoGameOnlineShopInfrastructure.EntityConfigurations
             builder.Property(e => e.CodeGenre)
                 .IsRequired(true)
                 .HasColumnType("nvarchar(max)");
+
+            builder.Property(e => e.CodePlatform)
+                .IsRequired(true)
+                .HasColumnType("nvarchar(max)");
         }
     }
 }

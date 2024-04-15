@@ -12,5 +12,6 @@ namespace VideoGameOnlineShopDomain.DomainModels
         public string? ImageUrl { get; set; }
         public virtual Guid DeveloperId { get; set; }
         public string CodeGenre { get; set; } = string.Empty;
+        public string CodePlatform { get; set; } = string.Empty;
     }
 }

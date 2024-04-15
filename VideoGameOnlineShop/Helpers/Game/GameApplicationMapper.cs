@@ -13,6 +13,7 @@ namespace VideoGameOnlineShopApplication.Helpers.Game
                 Name = gameSubmissionDto.Name,
                 Description = gameSubmissionDto.Description,
                 CodeMatureRating = gameSubmissionDto.CodeMatureRating,
+                CodePlatform = gameSubmissionDto.CodePlatform,
                 Rating = 0,
                 Price = gameSubmissionDto.Price,
                 ImageUrl = gameSubmissionDto.ImageUrl ?? null,
@@ -37,7 +38,8 @@ namespace VideoGameOnlineShopApplication.Helpers.Game
                 Price = gameUpdateDto.Price,
                 ImageUrl = gameUpdateDto.ImageUrl ?? null,
                 DeveloperId = Guid.Parse(gameUpdateDto.DeveloperId),
-                CodeGenre = gameUpdateDto.CodeGenre
+                CodeGenre = gameUpdateDto.CodeGenre,
+                CodePlatform = gameUpdateDto.CodePlatform
             };
 
             return gameSubmissionDataModel;
@@ -56,6 +58,7 @@ namespace VideoGameOnlineShopApplication.Helpers.Game
                 ImageUrl = gameSubmissionDataModel.ImageUrl ?? null,
                 DeveloperId = gameSubmissionDataModel.DeveloperId.ToString(),
                 CodeGenre = gameSubmissionDataModel.CodeGenre,
+                CodePlatform = gameSubmissionDataModel.CodePlatform,
                 DateTimeCreated = gameSubmissionDataModel.DateTimeCreated,
                 DateTimeUpdated = gameSubmissionDataModel.DateTimeUpdated,
 

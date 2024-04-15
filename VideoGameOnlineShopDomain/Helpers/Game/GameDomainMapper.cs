@@ -16,6 +16,7 @@ namespace VideoGameOnlineShopDomain.Helpers.Game
                 ImageUrl = gameSubmissionDataModel.ImageUrl ?? null,
                 DeveloperId = gameSubmissionDataModel.DeveloperId,
                 CodeGenre = gameSubmissionDataModel.CodeGenre,
+                CodePlatform = gameSubmissionDataModel.CodePlatform,
                 DateTimeCreated = gameSubmissionDataModel.DateTimeCreated,
                 DateTimeUpdated = gameSubmissionDataModel.DateTimeUpdated,
 
@@ -36,6 +37,7 @@ namespace VideoGameOnlineShopDomain.Helpers.Game
                 ImageUrl = game.ImageUrl ?? null,
                 DeveloperId = game.DeveloperId,
                 CodeGenre = game.CodeGenre,
+                CodePlatform = game.CodePlatform,
                 DateTimeCreated = game.DateTimeCreated,
                 DateTimeUpdated = game.DateTimeUpdated,
 
