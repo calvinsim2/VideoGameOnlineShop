@@ -10,6 +10,7 @@ namespace VideoGameOnlineShopApplication.Helpers
         {
             CreateMap<CodesTableBase, CodeDecodeMatureRating>();
             CreateMap<CodesTableBase, CodeDecodeGenre>();
+            CreateMap<CodesTableBase, CodeDecodePlatform>();
 
         }
     }
