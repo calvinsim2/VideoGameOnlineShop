@@ -30,5 +30,14 @@ namespace VideoGameOnlineShopDomain.Common
 
             return inputStringRemoveEmptySpace.ToUpper();
         }
+
+        public static IEnumerable<string> ConvertStringsToListRemoveNullAndEmptyElements(string inputString)
+        {
+            List<string> stringList = inputString.Split(",").ToList();
+
+            stringList.RemoveAll(s => string.IsNullOrEmpty(s) || string.IsNullOrWhiteSpace(s));
+
+            return stringList;
+        }
     }
 }

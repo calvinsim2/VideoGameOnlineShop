@@ -62,6 +62,26 @@ namespace VideoGameOnlineShopInfrastructure.Migrations
                     b.ToTable("CodeDecodeMatureRating");
                 });
 
+            modelBuilder.Entity("VideoGameOnlineShopDomain.DomainModels.Common.CodesTable.CodeDecodePlatform", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("UniqueIdentifier")
+                        .HasDefaultValueSql("newsequentialId()");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("DecodeValue")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CodeDecodePlatform");
+                });
+
             modelBuilder.Entity("VideoGameOnlineShopDomain.DomainModels.Developer", b =>
                 {
                     b.Property<Guid>("Id")

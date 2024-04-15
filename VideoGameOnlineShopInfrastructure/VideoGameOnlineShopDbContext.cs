@@ -19,6 +19,7 @@ namespace VideoGameOnlineShopInfrastructure
         public DbSet<Developer> Developer { get; set; } = null!;
         public DbSet<CodeDecodeMatureRating> CodeDecodeMatureRating { get; set; } = null!;
         public DbSet<CodeDecodeGenre> CodeDecodeGenre { get; set; } = null!;
+        public DbSet<CodeDecodePlatform> CodeDecodePlatform { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,6 +27,7 @@ namespace VideoGameOnlineShopInfrastructure
             modelBuilder.ApplyConfiguration(new DeveloperEntityConfiguration());
             modelBuilder.ApplyConfiguration(new CodeDecodeMatureRatingConfiguation());
             modelBuilder.ApplyConfiguration(new CodeDecodeGenreConfiguration());
+            modelBuilder.ApplyConfiguration(new CodeDecodePlatformConfiguration());
         }
     }
 }
