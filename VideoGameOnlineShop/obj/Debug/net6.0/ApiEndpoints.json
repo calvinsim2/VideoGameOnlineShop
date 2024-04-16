@@ -1,5 +1,227 @@
 [
   {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetAllCodeGenreAsync",
+    "RelativePath": "api/CodesTable/genre",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "AddCodeGenreAsync",
+    "RelativePath": "api/CodesTable/genre",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codesTableDto",
+        "Type": "VideoGameOnlineShopApplication.Models.Dto.CodesTable.CodesTableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "DeleteCodeGenreAsync",
+    "RelativePath": "api/CodesTable/genre",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetExplicitCodeGenreAsync",
+    "RelativePath": "api/CodesTable/genre/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetCodeGenreByCodesAsync",
+    "RelativePath": "api/CodesTable/genre/selected/{codes}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codes",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetAllCodeMatureRatingAsync",
+    "RelativePath": "api/CodesTable/matureRating",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "AddCodeMatureRatingAsync",
+    "RelativePath": "api/CodesTable/matureRating",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codesTableDto",
+        "Type": "VideoGameOnlineShopApplication.Models.Dto.CodesTable.CodesTableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "DeleteCodeMatureRatingAsync",
+    "RelativePath": "api/CodesTable/matureRating",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetExplicitCodeMatureRatingAsync",
+    "RelativePath": "api/CodesTable/matureRating/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetCodeMatureRatingByCodesAsync",
+    "RelativePath": "api/CodesTable/matureRating/selected/{codes}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codes",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetAllCodePlatformAsync",
+    "RelativePath": "api/CodesTable/platform",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "AddCodePlatformAsync",
+    "RelativePath": "api/CodesTable/platform",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codesTableDto",
+        "Type": "VideoGameOnlineShopApplication.Models.Dto.CodesTable.CodesTableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "DeleteCodePlatformAsync",
+    "RelativePath": "api/CodesTable/platform",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetExplicitCodePlatformAsync",
+    "RelativePath": "api/CodesTable/platform/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
+    "Method": "GetSelectedCodeDecodePlatformByCodesAsync",
+    "RelativePath": "api/CodesTable/platform/selected/{codes}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codes",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.DeveloperController",
     "Method": "GetDeveloperByIdAsync",
     "RelativePath": "api/Developer/{id}",
@@ -132,243 +354,6 @@
       {
         "Name": "gameUpdateDto",
         "Type": "VideoGameOnlineShopApplication.Models.Dto.GameUpdateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "GetAllCodeGenreAsync",
-    "RelativePath": "genre",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "AddCodeGenreAsync",
-    "RelativePath": "genre",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Code",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "DecodeValue",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "DeleteCodeGenreAsync",
-    "RelativePath": "genre",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "GetExplicitCodeGenreAsync",
-    "RelativePath": "genre/{code}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "code",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "GetCodeGenreByCodesAsync",
-    "RelativePath": "genre/selected/{codes}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "codes",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "GetAllCodeMatureRatingAsync",
-    "RelativePath": "matureRating",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "AddCodeMatureRatingAsync",
-    "RelativePath": "matureRating",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Code",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "DecodeValue",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "DeleteCodeMatureRatingAsync",
-    "RelativePath": "matureRating",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "GetExplicitCodeMatureRatingAsync",
-    "RelativePath": "matureRating/{code}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "code",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "GetCodeMatureRatingByCodesAsync",
-    "RelativePath": "matureRating/selected/{codes}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "codes",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "GetAllCodePlatformAsync",
-    "RelativePath": "platform",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "AddCodePlatformAsync",
-    "RelativePath": "platform",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Code",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "DecodeValue",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "DeleteCodePlatformAsync",
-    "RelativePath": "platform",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "GetExplicitCodePlatformAsync",
-    "RelativePath": "platform/{code}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "code",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoGameOnlineShopApplication.Controllers.CodesTableController",
-    "Method": "GetSelectedCodeDecodePlatformByCodesAsync",
-    "RelativePath": "platform/selected/{codes}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "codes",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
