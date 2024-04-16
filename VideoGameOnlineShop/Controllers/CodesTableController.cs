@@ -5,6 +5,8 @@ using VideoGameOnlineShopDomain.Interfaces.Common;
 
 namespace VideoGameOnlineShopApplication.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class CodesTableController : ControllerBase
     {
         private readonly ICodesTableApplicationService _codesTableApplicationService;
