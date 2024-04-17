@@ -28,3 +28,18 @@ C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOn
 C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.pdb
 C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.genruntimeconfig.cache
 C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\ref\VideoGameOnlineShopDomain.dll
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\bin\Debug\net6.0\VideoGameOnlineShopDomain.deps.json
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\bin\Debug\net6.0\VideoGameOnlineShopDomain.runtimeconfig.json
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\bin\Debug\net6.0\VideoGameOnlineShopDomain.dll
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\bin\Debug\net6.0\VideoGameOnlineShopDomain.pdb
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.csproj.AssemblyReference.cache
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.AssemblyInfoInputs.cache
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.AssemblyInfo.cs
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.csproj.CoreCompileInputs.cache
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.sourcelink.json
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.dll
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\refint\VideoGameOnlineShopDomain.dll
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.pdb
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\VideoGameOnlineShopDomain.genruntimeconfig.cache
+C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShopDomain\obj\Debug\net6.0\ref\VideoGameOnlineShopDomain.dll

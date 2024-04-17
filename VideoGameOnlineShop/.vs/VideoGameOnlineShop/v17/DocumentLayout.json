@@ -1,65 +1,52 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\",
+  "WorkspaceRootPath": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\controllers\\codestablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:controllers\\codestablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshop\\controllers\\developercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:controllers\\developercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6DDB800-1825-4903-A5E4-61A5F04AABF0}|..\\VideoGameOnlineShopDomain\\VideoGameOnlineShopDomain.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshopdomain\\common\\commonutilitymethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\services\\gameapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshop\\services\\gameapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:services\\gameapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6DDB800-1825-4903-A5E4-61A5F04AABF0}|..\\VideoGameOnlineShopDomain\\VideoGameOnlineShopDomain.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshopdomain\\domainmodels\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\services\\developerapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:services\\developerapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\services\\codestableapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:services\\codestableapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\validators\\gameupdatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:validators\\gameupdatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\interfaces\\icodestableapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshop\\interfaces\\icodestableapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:interfaces\\icodestableapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{029A6C7F-813B-4DF4-BD03-7EFB8F5EB9FE}|..\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshopinfrastructure\\entityconfigurations\\gameentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{029A6C7F-813B-4DF4-BD03-7EFB8F5EB9FE}|..\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshopinfrastructure\\repositories\\codestable\\codestablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{029A6C7F-813B-4DF4-BD03-7EFB8F5EB9FE}|..\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshopinfrastructure\\entityconfigurations\\codestable\\codedecodeplatformconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{029A6C7F-813B-4DF4-BD03-7EFB8F5EB9FE}|..\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshopinfrastructure\\repositories\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\validators\\gamesubmissiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshop\\validators\\gamesubmissiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:validators\\gamesubmissiondtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshop\\controllers\\developercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:controllers\\developercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshop\\validators\\gameupdatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:validators\\gameupdatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshop\\controllers\\codestablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:controllers\\codestablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshop\\services\\developerapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:services\\developerapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshop\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|c:\\users\\huan.c.sim\\onedrive - avanade\\desktop\\project\\videogameonlineshop\\videogameonlineshop\\videogameonlineshop\\services\\codestableapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DCBCBA4-59AE-4F07-AA90-C31DB03D9017}|VideoGameOnlineShopApplication.csproj|solutionrelative:services\\codestableapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Developer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeMatureRatingConfiguation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -89,7 +76,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DataModels\\GameDataModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{029A6C7F-813B-4DF4-BD03-7EFB8F5EB9FE}|..\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj|c:\\users\\calvi\\desktop\\programming\\self projects\\videogameonlineshop\\videogameonlineshopinfrastructure\\migrations\\20240410053109_codematureratingchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\GameEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -99,31 +86,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "GameController.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\GameController.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\GameController.cs",
               "RelativeDocumentMoniker": "Controllers\\GameController.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\GameController.cs",
               "RelativeToolTip": "Controllers\\GameController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAkwDEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T08:03:34.755Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
+              "Title": "Developer.cs",
+              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Developer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Developer.cs",
+              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Developer.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Developer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T05:27:17.745Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "DeveloperApplicationService.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\DeveloperApplicationService.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\DeveloperApplicationService.cs",
               "RelativeDocumentMoniker": "Services\\DeveloperApplicationService.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\DeveloperApplicationService.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\DeveloperApplicationService.cs",
               "RelativeToolTip": "Services\\DeveloperApplicationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAkwA8AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-01T05:31:58.04Z",
               "IsPinned": true
@@ -132,188 +131,73 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "GameApplicationService.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\GameApplicationService.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\GameApplicationService.cs",
               "RelativeDocumentMoniker": "Services\\GameApplicationService.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\GameApplicationService.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\GameApplicationService.cs",
               "RelativeToolTip": "Services\\GameApplicationService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwBAAAAAJAAAA",
+              "ViewState": "AQIAACQAAAAAQaKbT8IewDIAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-01T05:38:27.168Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "GameUpdateDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Validators\\GameUpdateDtoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Validators\\GameUpdateDtoValidator.cs",
               "RelativeDocumentMoniker": "Validators\\GameUpdateDtoValidator.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Validators\\GameUpdateDtoValidator.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Validators\\GameUpdateDtoValidator.cs",
               "RelativeToolTip": "Validators\\GameUpdateDtoValidator.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAABaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-01T14:20:44.075Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "CodesTableController.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\CodesTableController.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\CodesTableController.cs",
               "RelativeDocumentMoniker": "Controllers\\CodesTableController.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\CodesTableController.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\CodesTableController.cs",
               "RelativeToolTip": "Controllers\\CodesTableController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T14:46:40.073Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommonUtilityMethods.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\Common\\CommonUtilityMethods.cs",
+              "RelativeDocumentMoniker": "..\\VideoGameOnlineShopDomain\\Common\\CommonUtilityMethods.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\Common\\CommonUtilityMethods.cs",
+              "RelativeToolTip": "..\\VideoGameOnlineShopDomain\\Common\\CommonUtilityMethods.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T10:01:16.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DeveloperController.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\DeveloperController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DeveloperController.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\DeveloperController.cs",
+              "RelativeToolTip": "Controllers\\DeveloperController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T05:28:44.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ICodesTableApplicationService.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Interfaces\\ICodesTableApplicationService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ICodesTableApplicationService.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Interfaces\\ICodesTableApplicationService.cs",
-              "RelativeToolTip": "Interfaces\\ICodesTableApplicationService.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAkwB0AAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T09:45:29.212Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CodesTableApplicationService.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\CodesTableApplicationService.cs",
-              "RelativeDocumentMoniker": "Services\\CodesTableApplicationService.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\CodesTableApplicationService.cs",
-              "RelativeToolTip": "Services\\CodesTableApplicationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T08:39:43.155Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAGUAAABqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:02:31.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Game.cs",
-              "RelativeDocumentMoniker": "..\\VideoGameOnlineShopDomain\\DomainModels\\Game.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Game.cs",
-              "RelativeToolTip": "..\\VideoGameOnlineShopDomain\\DomainModels\\Game.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T04:17:24.112Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AutoMapperProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Helpers\\AutoMapperProfiles.cs",
-              "RelativeDocumentMoniker": "Helpers\\AutoMapperProfiles.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Helpers\\AutoMapperProfiles.cs",
-              "RelativeToolTip": "Helpers\\AutoMapperProfiles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T05:04:52.85Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CodeDecodePlatformConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodePlatformConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodePlatformConfiguration.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodePlatformConfiguration.cs",
-              "RelativeToolTip": "..\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodePlatformConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T15:22:45.09Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GameEntityConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\GameEntityConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\GameEntityConfiguration.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\GameEntityConfiguration.cs",
-              "RelativeToolTip": "..\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\GameEntityConfiguration.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCUAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T05:30:21.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CodesTableRepository.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\Repositories\\CodesTable\\CodesTableRepository.cs",
-              "RelativeDocumentMoniker": "..\\VideoGameOnlineShopInfrastructure\\Repositories\\CodesTable\\CodesTableRepository.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\Repositories\\CodesTable\\CodesTableRepository.cs",
-              "RelativeToolTip": "..\\VideoGameOnlineShopInfrastructure\\Repositories\\CodesTable\\CodesTableRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T14:11:06.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GameRepository.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\Repositories\\GameRepository.cs",
-              "RelativeDocumentMoniker": "..\\VideoGameOnlineShopInfrastructure\\Repositories\\GameRepository.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\Repositories\\GameRepository.cs",
-              "RelativeToolTip": "..\\VideoGameOnlineShopInfrastructure\\Repositories\\GameRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T14:10:57.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "20240410053109_CodeMatureRatingChange.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\Migrations\\20240410053109_CodeMatureRatingChange.cs",
-              "RelativeDocumentMoniker": "..\\VideoGameOnlineShopInfrastructure\\Migrations\\20240410053109_CodeMatureRatingChange.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\Migrations\\20240410053109_CodeMatureRatingChange.cs",
-              "RelativeToolTip": "..\\VideoGameOnlineShopInfrastructure\\Migrations\\20240410053109_CodeMatureRatingChange.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T05:31:09.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DeveloperController.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\DeveloperController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DeveloperController.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Controllers\\DeveloperController.cs",
-              "RelativeToolTip": "Controllers\\DeveloperController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAYwDEAAABgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T05:28:44.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "GameSubmissionDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Validators\\GameSubmissionDtoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Validators\\GameSubmissionDtoValidator.cs",
               "RelativeDocumentMoniker": "Validators\\GameSubmissionDtoValidator.cs",
-              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\Validators\\GameSubmissionDtoValidator.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Validators\\GameSubmissionDtoValidator.cs",
               "RelativeToolTip": "Validators\\GameSubmissionDtoValidator.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAQwBMAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -321,108 +205,156 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T12:02:31.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICodesTableApplicationService.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Interfaces\\ICodesTableApplicationService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICodesTableApplicationService.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Interfaces\\ICodesTableApplicationService.cs",
+              "RelativeToolTip": "Interfaces\\ICodesTableApplicationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T09:45:29.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GameEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\GameEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\GameEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\GameEntityConfiguration.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\GameEntityConfiguration.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T05:30:21.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CodesTableApplicationService.cs",
+              "DocumentMoniker": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\CodesTableApplicationService.cs",
+              "RelativeDocumentMoniker": "Services\\CodesTableApplicationService.cs",
+              "ToolTip": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\Services\\CodesTableApplicationService.cs",
+              "RelativeToolTip": "Services\\CodesTableApplicationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T08:39:43.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "CodeDecodeMatureRatingConfiguation.cs",
               "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeMatureRatingConfiguation.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeMatureRatingConfiguation.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeMatureRatingConfiguation.cs",
               "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeMatureRatingConfiguation.cs",
-              "RelativeToolTip": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeMatureRatingConfiguation.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeMatureRatingConfiguation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T07:37:23.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 13,
               "Title": "CodesTableBase.cs",
               "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTableBase.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTableBase.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTableBase.cs",
               "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTableBase.cs",
-              "RelativeToolTip": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTableBase.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTableBase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T07:26:53.728Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
               "Title": "CodeDecodeGenre.cs",
               "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTable\\CodeDecodeGenre.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTable\\CodeDecodeGenre.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTable\\CodeDecodeGenre.cs",
               "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTable\\CodeDecodeGenre.cs",
-              "RelativeToolTip": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTable\\CodeDecodeGenre.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Common\\CodesTable\\CodeDecodeGenre.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T07:19:08.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 15,
               "Title": "CodesTableExtension.cs",
               "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\Common\\CodesTableExtension.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\Common\\CodesTableExtension.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\Common\\CodesTableExtension.cs",
               "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\Common\\CodesTableExtension.cs",
-              "RelativeToolTip": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\Common\\CodesTableExtension.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\Common\\CodesTableExtension.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T07:34:34.817Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
               "Title": "CodeDecodeGenreConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeGenreConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeGenreConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeGenreConfiguration.cs",
               "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeGenreConfiguration.cs",
-              "RelativeToolTip": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeGenreConfiguration.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\EntityConfigurations\\CodesTable\\CodeDecodeGenreConfiguration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T07:20:47.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "VideoGameOnlineShopDbContext.cs",
               "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopDbContext.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopDbContext.cs",
               "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopDbContext.cs",
-              "RelativeToolTip": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopDbContext.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAxwBQAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T07:58:16.559Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 18,
               "Title": "ICodesTableBase.cs",
               "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\Interfaces\\CodesTable\\ICodesTableBase.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\Interfaces\\CodesTable\\ICodesTableBase.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\Interfaces\\CodesTable\\ICodesTableBase.cs",
               "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\Interfaces\\CodesTable\\ICodesTableBase.cs",
-              "RelativeToolTip": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\Interfaces\\CodesTable\\ICodesTableBase.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\Interfaces\\CodesTable\\ICodesTableBase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T07:41:23.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 19,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Game.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Game.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Game.cs",
               "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Game.cs",
-              "RelativeToolTip": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Game.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DomainModels\\Game.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T05:34:40.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 20,
               "Title": "GameDataModel.cs",
               "DocumentMoniker": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DataModels\\GameDataModel.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DataModels\\GameDataModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DataModels\\GameDataModel.cs",
               "ToolTip": "C:\\Users\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DataModels\\GameDataModel.cs",
-              "RelativeToolTip": "..\\..\\..\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DataModels\\GameDataModel.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\calvi\\Desktop\\Programming\\Dotnet6Projects\\VideoGameOnlineShop\\VideoGameOnlineShopDomain\\DataModels\\GameDataModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T05:31:05.92Z"
