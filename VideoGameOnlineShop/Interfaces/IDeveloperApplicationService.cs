@@ -5,6 +5,7 @@ namespace VideoGameOnlineShopApplication.Interfaces
 {
     public interface IDeveloperApplicationService
     {
+        Task<IEnumerable<DeveloperApplicationViewModel>> GetAllDevelopersAsync();
         Task<DeveloperApplicationViewModel> GetExplicitDeveloperAsync(Guid id);
         Task AddDeveloperAsync(DeveloperSubmissionDto developerSubmissionDto);
         Task UpdateSelectedDeveloperAsync(DeveloperUpdateDto developerUpdateDto);

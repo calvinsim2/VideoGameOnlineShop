@@ -223,6 +223,16 @@
   },
   {
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.DeveloperController",
+    "Method": "GetAllDevelopersAsync",
+    "RelativePath": "api/Developer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoGameOnlineShopApplication.Controllers.DeveloperController",
     "Method": "GetDeveloperByIdAsync",
     "RelativePath": "api/Developer/{id}",
     "HttpMethod": "GET",
@@ -239,7 +249,7 @@
   },
   {
     "ContainingType": "VideoGameOnlineShopApplication.Controllers.DeveloperController",
-    "Method": "DeleteExistingGameAsync",
+    "Method": "DeleteExistingDeveloperAsync",
     "RelativePath": "api/Developer/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,

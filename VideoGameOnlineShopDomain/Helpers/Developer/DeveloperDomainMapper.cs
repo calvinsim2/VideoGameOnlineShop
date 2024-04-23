@@ -21,6 +21,7 @@ namespace VideoGameOnlineShopDomain.Helpers.Developer
         {
             DeveloperDataModel developerSubmissionDataModel = new DeveloperDataModel
             {
+                Id = developer.Id,
                 Name = developer.Name,
                 Slogan = developer.Slogan,
                 Logo = developer.Logo,

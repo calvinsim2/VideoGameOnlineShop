@@ -18,6 +18,14 @@ namespace VideoGameOnlineShopDomain.Services
             _developerRepository = developerRepository;
         }
 
+        public async Task<IEnumerable<DeveloperDataModel>> GetAllExistingDevelopersAsync()
+        {
+            IEnumerable<Developer> developers = await _developerRepository.GetAllDevelopersAsync(false);
+
+            IEnumerable<DeveloperDataModel> developerDataModels = MapMultipleGameRecordToGameDataModel(developers);
+
+            return developerDataModels;
+        }
         public async Task<DeveloperDataModel> GetExplicitDeveloperAsync(Guid id)
         {
             Developer? developer = await _developerRepository.GetByIdAsync(id, false) ?? throw new HttpRequestException("Developer not found", null, HttpStatusCode.NotFound);
@@ -25,13 +33,6 @@ namespace VideoGameOnlineShopDomain.Services
             DeveloperDataModel developerDataModel = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developer);
             return developerDataModel;
         }
-
-        public async Task<IEnumerable<Developer>> GetAllExistingDevelopersAsync()
-        {
-            List<Developer> developers = (await _developerRepository.GetAllDevelopersAsync(false)).ToList();
-            return developers;
-        }
-
         public async Task AddDeveloperAsync(DeveloperDataModel developerDataModel)
         {
             Developer developer = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developerDataModel);
@@ -63,13 +64,33 @@ namespace VideoGameOnlineShopDomain.Services
             await _developerRepository.SaveChangesAsync();
         }
 
-
+        #region Common Non Repository calls functions
         public static void MapDataToNewDeveloperForUpdate(DeveloperDataModel incomingDeveloperDataModel, Developer existingDeveloper)
         {
             existingDeveloper.Name = incomingDeveloperDataModel.Name;
             existingDeveloper.Slogan = incomingDeveloperDataModel.Slogan;
             existingDeveloper.Logo = incomingDeveloperDataModel.Logo;
             existingDeveloper.DateTimeUpdated = DateTimeOffset.Now;
-        } 
+        }
+
+        public IEnumerable<DeveloperDataModel> MapMultipleGameRecordToGameDataModel(IEnumerable<Developer> developers)
+        {
+            if (developers is null || !developers.Any())
+            {
+                return new List<DeveloperDataModel>();
+            }
+
+            List<DeveloperDataModel> newDeveloperSubmissionDataModels = new List<DeveloperDataModel>();
+
+            foreach (var developer in developers)
+            {
+                newDeveloperSubmissionDataModels.Add(DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developer));
+            }
+
+            return newDeveloperSubmissionDataModels;
+
+        }
+
+        #endregion
     }
 }

@@ -65,6 +65,8 @@ namespace VideoGameOnlineShopDomain.Services
             await _gameRepository.SaveChangesAsync();
         }
 
+        #region Common Non Repository calls functions
+
         public IEnumerable<GameDataModel> MapMultipleGameRecordToGameDataModel(IEnumerable<Game> games)
         {
             if (games is null || !games.Any())
@@ -94,5 +96,7 @@ namespace VideoGameOnlineShopDomain.Services
             existingGame.CodeGenre = incomingGameDataModel.CodeGenre;
             existingGame.DateTimeUpdated = DateTimeOffset.Now;
         }
+
+        #endregion
     }
 }

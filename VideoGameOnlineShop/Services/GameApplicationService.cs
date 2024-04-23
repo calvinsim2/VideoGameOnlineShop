@@ -20,7 +20,7 @@ namespace VideoGameOnlineShopApplication.Services
         {
             IEnumerable<GameDataModel> gameSubmissionDataModels = await _gameService.GetAllExistingGamesAsync();
 
-            List<GameApplicationViewModel> gameApplicationViewModels = MapMultipleGameRecordToGameDataModel(gameSubmissionDataModels).ToList();
+            List<GameApplicationViewModel> gameApplicationViewModels = MapMultipleGameDataModelRecordToGameViewModel(gameSubmissionDataModels).ToList();
 
             return gameApplicationViewModels;
 
@@ -51,7 +51,7 @@ namespace VideoGameOnlineShopApplication.Services
             await _gameService.DeleteSelectedGameAsync(id);
         }
 
-        public IEnumerable<GameApplicationViewModel> MapMultipleGameRecordToGameDataModel(IEnumerable<GameDataModel> gameSubmissionDataModels)
+        public IEnumerable<GameApplicationViewModel> MapMultipleGameDataModelRecordToGameViewModel(IEnumerable<GameDataModel> gameSubmissionDataModels)
         {
             if (gameSubmissionDataModels is null || !gameSubmissionDataModels.Any())
             {
