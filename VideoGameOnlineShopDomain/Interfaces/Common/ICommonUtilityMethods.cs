@@ -4,5 +4,6 @@
     {
         Guid ValidateStringIfConvertableToGuid(string stringId);
         string RemoveEmptySpaceAndCapitalizeString(string inputString);
+        void ValidateStringIfIsEmptyOrNull(string inputString);
     }
 }

@@ -2646,19 +2646,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\huan.c.sim\\.nuget\\packages\\": {}
+    "C:\\Users\\calvi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShopApplication.csproj",
+      "projectUniqueName": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShopApplication.csproj",
       "projectName": "VideoGameOnlineShopApplication",
-      "projectPath": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShopApplication.csproj",
-      "packagesPath": "C:\\Users\\huan.c.sim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShop\\obj\\",
+      "projectPath": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShopApplication.csproj",
+      "packagesPath": "C:\\Users\\calvi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShop\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\huan.c.sim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\calvi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2672,8 +2677,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj": {
-              "projectPath": "C:\\Users\\huan.c.sim\\OneDrive - Avanade\\Desktop\\Project\\VideoGameOnlineShop\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj"
+            "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj": {
+              "projectPath": "C:\\Users\\calvi\\Desktop\\Programming\\Self Projects\\VideoGameOnlineShop\\VideoGameOnlineShopInfrastructure\\VideoGameOnlineShopInfrastructure.csproj"
             }
           }
         }
@@ -2749,7 +2754,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

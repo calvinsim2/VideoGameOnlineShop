@@ -13,7 +13,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         private readonly ICommonUtilityMethods _commonUtilityMethods;
 
         public CodesTableController(ICodesTableApplicationService codesTableApplicationService,
-                                    ICommonUtilityMethods commonUtilityMethods) 
+                                    ICommonUtilityMethods commonUtilityMethods)
         {
             _codesTableApplicationService = codesTableApplicationService;
             _commonUtilityMethods = commonUtilityMethods;
@@ -32,6 +32,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("matureRating/{code}")]
         public async Task<IActionResult> GetExplicitCodeMatureRatingAsync(string code)
         {
+            _commonUtilityMethods.ValidateStringIfIsEmptyOrNull(code);
             string trimAndCapsCode = _commonUtilityMethods.RemoveEmptySpaceAndCapitalizeString(code);
             var codeMatureRating = await _codesTableApplicationService.GetCodeMatureRatingByCodeAsync(trimAndCapsCode);
 
@@ -41,6 +42,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("matureRating/selected/{codes}")]
         public async Task<IActionResult> GetCodeMatureRatingByCodesAsync(string codes)
         {
+            _commonUtilityMethods.ValidateStringIfIsEmptyOrNull(codes);
             string trimAndCapsCode = _commonUtilityMethods.RemoveEmptySpaceAndCapitalizeString(codes);
             var codeMatureRating = await _codesTableApplicationService.GetSelectedCodeMatureRatingByCodesAsync(trimAndCapsCode);
 
@@ -79,6 +81,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("genre/selected/{codes}")]
         public async Task<IActionResult> GetCodeGenreByCodesAsync(string codes)
         {
+            _commonUtilityMethods.ValidateStringIfIsEmptyOrNull(codes);
             string trimAndCapsCode = _commonUtilityMethods.RemoveEmptySpaceAndCapitalizeString(codes);
             var codeGenres = await _codesTableApplicationService.GetSelectedCodeGenreByCodesAsync(trimAndCapsCode);
 
@@ -88,6 +91,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("genre/{code}")]
         public async Task<IActionResult> GetExplicitCodeGenreAsync(string code)
         {
+            _commonUtilityMethods.ValidateStringIfIsEmptyOrNull(code);
             string trimAndCapsCode = _commonUtilityMethods.RemoveEmptySpaceAndCapitalizeString(code);
             var codeGenre = await _codesTableApplicationService.GetCodeGenreByCodeAsync(trimAndCapsCode);
 
@@ -126,6 +130,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("platform/selected/{codes}")]
         public async Task<IActionResult> GetSelectedCodeDecodePlatformByCodesAsync(string codes)
         {
+            _commonUtilityMethods.ValidateStringIfIsEmptyOrNull(codes);
             string trimAndCapsCode = _commonUtilityMethods.RemoveEmptySpaceAndCapitalizeString(codes);
             var codePlatforms = await _codesTableApplicationService.GetSelectedCodeDecodePlatformByCodesAsync(trimAndCapsCode);
 
@@ -135,6 +140,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("platform/{code}")]
         public async Task<IActionResult> GetExplicitCodePlatformAsync(string code)
         {
+            _commonUtilityMethods.ValidateStringIfIsEmptyOrNull(code);
             string trimAndCapsCode = _commonUtilityMethods.RemoveEmptySpaceAndCapitalizeString(code);
             var codePlatform = await _codesTableApplicationService.GetCodePlatformByCodeAsync(trimAndCapsCode);
 

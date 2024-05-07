@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VideoGameOnlineShopInfrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83a0290b2e23bf1c7e77797140041b1e99ad788f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+739ab7ae8ebd26becb82345123c5c2dad459faa6")]
 [assembly: System.Reflection.AssemblyProductAttribute("VideoGameOnlineShopInfrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VideoGameOnlineShopInfrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

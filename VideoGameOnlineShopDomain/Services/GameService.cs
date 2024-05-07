@@ -1,8 +1,10 @@
 ﻿using System.Net;
+using System.Xml.Linq;
 using VideoGameOnlineShopDomain.DataModels;
 using VideoGameOnlineShopDomain.DomainModels;
 using VideoGameOnlineShopDomain.Helpers.Game;
 using VideoGameOnlineShopDomain.Interfaces;
+using VideoGameOnlineShopDomain.Interfaces.Common;
 
 namespace VideoGameOnlineShopDomain.Services
 {
@@ -10,12 +12,15 @@ namespace VideoGameOnlineShopDomain.Services
     {
         public readonly IGameRepository _gameRepository;
         public readonly IDeveloperRepository _developerRepository;
+        private readonly ICommonUtilityMethods _commonUtilityMethods;
 
         public GameService(IGameRepository gameRepository,
-                           IDeveloperRepository developerRepository) 
+                           IDeveloperRepository developerRepository,
+                           ICommonUtilityMethods commonUtilityMethods) 
         {
             _gameRepository = gameRepository;
             _developerRepository = developerRepository;
+            _commonUtilityMethods = commonUtilityMethods;
         }
 
         public async Task<GameDataModel> GetExplicitGameAsync(Guid id)
@@ -37,6 +42,13 @@ namespace VideoGameOnlineShopDomain.Services
 
         public async Task AddGameAsync(GameDataModel gameSubmissionDataModel)
         {
+            bool gameNameExist = await CheckGameNameAlreadyExistAsync(gameSubmissionDataModel.Name);
+
+            if (gameNameExist) 
+            {
+                throw new HttpRequestException("Game Name already exists", null, HttpStatusCode.BadRequest);
+            }
+
             Game game = GameDomainMapper.MapGameDtoToGameDataModel(gameSubmissionDataModel);
             await _gameRepository.AddAsync(game);
             await _gameRepository.SaveChangesAsync();
@@ -63,6 +75,24 @@ namespace VideoGameOnlineShopDomain.Services
 
             _gameRepository.Remove(existingGame);
             await _gameRepository.SaveChangesAsync();
+        }
+
+        public async Task<bool> CheckGameNameAlreadyExistAsync(string name)
+        {
+            List<Game> games = (await _gameRepository.GetAllGamesAsync(false)).ToList();
+
+            foreach (Game game in games) 
+            {
+                string existingGameName = _commonUtilityMethods.RemoveEmptySpaceAndCapitalizeString(game.Name);
+                string inputGameName = _commonUtilityMethods.RemoveEmptySpaceAndCapitalizeString(name);
+
+                if (existingGameName == inputGameName)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         #region Common Non Repository calls functions
