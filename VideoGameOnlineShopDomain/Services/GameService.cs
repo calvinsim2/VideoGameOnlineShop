@@ -1,5 +1,8 @@
 ﻿using System.Net;
+using System.Net.Mail;
+using System.Web.Http;
 using System.Xml.Linq;
+using VideoGameOnlineShopDomain.Common.Exceptions;
 using VideoGameOnlineShopDomain.DataModels;
 using VideoGameOnlineShopDomain.DomainModels;
 using VideoGameOnlineShopDomain.Helpers.Game;
@@ -46,7 +49,7 @@ namespace VideoGameOnlineShopDomain.Services
 
             if (gameNameExist) 
             {
-                throw new HttpRequestException("Game Name already exists", null, HttpStatusCode.BadRequest);
+                throw new BadRequestException("Game Name already exists");
             }
 
             Game game = GameDomainMapper.MapGameDtoToGameDataModel(gameSubmissionDataModel);
@@ -57,7 +60,7 @@ namespace VideoGameOnlineShopDomain.Services
         public async Task UpdateSelectedGameAsync(GameDataModel gameDataModel)
         {
             Game? game = await _gameRepository.GetByIdAsync(gameDataModel.Id, false)
-                                    ?? throw new HttpRequestException("Game not found", null, HttpStatusCode.NotFound);
+                                    ?? throw new NotFoundException("Game not found");
 
             MapIncomingDataToExistingGameForUpdate(gameDataModel, game);
 

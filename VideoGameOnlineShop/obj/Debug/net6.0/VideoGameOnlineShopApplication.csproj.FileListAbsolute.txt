@@ -223,3 +223,7 @@ C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\Video
 C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShop\obj\Debug\net6.0\VideoGameOnlineShopApplication.pdb
 C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShop\obj\Debug\net6.0\VideoGameOnlineShopApplication.genruntimeconfig.cache
 C:\Users\huan.c.sim\OneDrive - Avanade\Desktop\Project\VideoGameOnlineShop\VideoGameOnlineShop\VideoGameOnlineShop\obj\Debug\net6.0\ref\VideoGameOnlineShopApplication.dll
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShop\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShop\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShop\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\calvi\Desktop\Programming\Self Projects\VideoGameOnlineShop\VideoGameOnlineShop\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

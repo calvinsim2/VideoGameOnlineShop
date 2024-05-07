@@ -44,9 +44,16 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpPost]
         public async Task<IActionResult> AddGameAsync([FromBody] GameSubmissionDto gameSubmissionDto)
         {
-            await _gameSubmissionDtoValidator.ValidateAsync(gameSubmissionDto, options => options.ThrowOnFailures());
-            await _gameApplicationService.AddGameAsync(gameSubmissionDto);
-            return Ok(gameSubmissionDto);
+            try
+            {
+                await _gameSubmissionDtoValidator.ValidateAsync(gameSubmissionDto, options => options.ThrowOnFailures());
+                await _gameApplicationService.AddGameAsync(gameSubmissionDto);
+                return Ok(gameSubmissionDto);
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPut("update")]
