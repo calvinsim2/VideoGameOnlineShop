@@ -28,7 +28,7 @@ namespace VideoGameOnlineShopDomain.Services
 
         public async Task<GameDataModel> GetExplicitGameAsync(Guid id)
         {
-            Game? game = await _gameRepository.GetByIdAsync(id, false) ?? throw new HttpRequestException("Game not found", null, HttpStatusCode.NotFound);
+            Game? game = await _gameRepository.GetByIdAsync(id, false) ?? throw new NotFoundException("Game not found");
 
             GameDataModel gameSubmissionDataModel = GameDomainMapper.MapGameToGameDataModel(game);
             return gameSubmissionDataModel;
