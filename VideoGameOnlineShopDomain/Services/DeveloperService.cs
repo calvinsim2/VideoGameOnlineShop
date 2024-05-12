@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using VideoGameOnlineShopDomain.Common.Exceptions;
 using VideoGameOnlineShopDomain.DataModels;
 using VideoGameOnlineShopDomain.DomainModels;
 using VideoGameOnlineShopDomain.Helpers.Developer;
@@ -28,7 +29,7 @@ namespace VideoGameOnlineShopDomain.Services
         }
         public async Task<DeveloperDataModel> GetExplicitDeveloperAsync(Guid id)
         {
-            Developer? developer = await _developerRepository.GetByIdAsync(id, false) ?? throw new HttpRequestException("Developer not found", null, HttpStatusCode.NotFound);
+            Developer? developer = await _developerRepository.GetByIdAsync(id, false) ?? throw new NotFoundException("Developer not found");
 
             DeveloperDataModel developerDataModel = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developer);
             return developerDataModel;
@@ -44,7 +45,7 @@ namespace VideoGameOnlineShopDomain.Services
         public async Task UpdateSelectedDeveloperAsync(DeveloperDataModel developerDataModel)
         {
             Developer? developer = await _developerRepository.GetByIdAsync(developerDataModel.Id, false) 
-                                    ?? throw new HttpRequestException("Developer not found", null, HttpStatusCode.NotFound);
+                                    ?? throw new NotFoundException("Developer not found");
 
             MapDataToNewDeveloperForUpdate(developerDataModel, developer);
 
@@ -57,7 +58,7 @@ namespace VideoGameOnlineShopDomain.Services
             var existingDeveloper = await _developerRepository.GetByIdAsync(id, true);
             if (existingDeveloper is null)
             {
-                throw new HttpRequestException("Developer not found", null, HttpStatusCode.NotFound);
+                throw new NotFoundException("Developer not found");
             }
 
             _developerRepository.Remove(existingDeveloper);
