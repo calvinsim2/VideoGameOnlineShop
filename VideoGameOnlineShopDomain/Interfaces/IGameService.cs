@@ -9,5 +9,6 @@ namespace VideoGameOnlineShopDomain.Interfaces
         Task AddGameAsync(GameDataModel gameSubmissionDataModel);
         Task UpdateSelectedGameAsync(GameDataModel gameDataModel);
         Task DeleteSelectedGameAsync(Guid id);
+        Task DeleteGamesForRemovedDeveloperAsync(Guid developerId);
     }
 }

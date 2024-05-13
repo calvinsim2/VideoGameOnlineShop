@@ -11,12 +11,15 @@ namespace VideoGameOnlineShopDomain.Services
     {
         public readonly IGameRepository _gameRepository;
         public readonly IDeveloperRepository _developerRepository;
+        public readonly IGameService _gameService;
 
         public DeveloperService(IGameRepository gameRepository,
-                                IDeveloperRepository developerRepository)
+                                IDeveloperRepository developerRepository,
+                                IGameService gameService)
         {
             _gameRepository = gameRepository;
             _developerRepository = developerRepository;
+            _gameService = gameService;
         }
 
         public async Task<IEnumerable<DeveloperDataModel>> GetAllExistingDevelopersAsync()
@@ -61,7 +64,9 @@ namespace VideoGameOnlineShopDomain.Services
                 throw new NotFoundException("Developer not found");
             }
 
+            await _gameService.DeleteGamesForRemovedDeveloperAsync(existingDeveloper.Id);
             _developerRepository.Remove(existingDeveloper);
+
             await _developerRepository.SaveChangesAsync();
         }
 

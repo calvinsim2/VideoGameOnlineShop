@@ -1,7 +1,4 @@
 ﻿using System.Net;
-using System.Net.Mail;
-using System.Web.Http;
-using System.Xml.Linq;
 using VideoGameOnlineShopDomain.Common.Exceptions;
 using VideoGameOnlineShopDomain.DataModels;
 using VideoGameOnlineShopDomain.DomainModels;
@@ -78,6 +75,13 @@ namespace VideoGameOnlineShopDomain.Services
 
             _gameRepository.Remove(existingGame);
             await _gameRepository.SaveChangesAsync();
+        }
+
+        public async Task DeleteGamesForRemovedDeveloperAsync(Guid developerId)
+        {
+             IEnumerable<Game> gamesByDeveloper = await _gameRepository.GetGamesByDeveloperIdAsync(developerId, true);
+
+             _gameRepository.RemoveRange(gamesByDeveloper);
         }
 
         public async Task<bool> CheckGameNameAlreadyExistAsync(string name)
