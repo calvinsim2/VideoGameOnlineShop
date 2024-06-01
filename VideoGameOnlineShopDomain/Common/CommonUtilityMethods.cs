@@ -1,4 +1,4 @@
-﻿using System.Net;
+﻿using VideoGameOnlineShopDomain.Common.Exceptions;
 using VideoGameOnlineShopDomain.Interfaces.Common;
 
 namespace VideoGameOnlineShopDomain.Common
@@ -7,13 +7,13 @@ namespace VideoGameOnlineShopDomain.Common
     {
         public CommonUtilityMethods() { }
 
-        public Guid ValidateStringIfConvertableToGuid(string stringId)
+        public Guid ConvertStringToGuid(string stringId)
         {
             bool isIdParsable = Guid.TryParse(stringId, out Guid guidId);
 
             if (!isIdParsable)
             {
-                throw new HttpRequestException("Please input correct Guid format", null, HttpStatusCode.BadRequest);
+                throw new BadRequestException("Please input correct Guid format");
             }
 
             return guidId;
@@ -25,7 +25,7 @@ namespace VideoGameOnlineShopDomain.Common
 
             if (string.IsNullOrEmpty(inputStringRemoveEmptySpace))
             {
-                throw new HttpRequestException("Input String cannot be empty", null, HttpStatusCode.BadRequest);
+                throw new BadRequestException("Input String cannot be empty");
             }
         }
 
@@ -36,7 +36,7 @@ namespace VideoGameOnlineShopDomain.Common
             return inputStringRemoveEmptySpace.ToUpper();
         }
 
-        public static IEnumerable<string> ConvertStringsToListRemoveNullAndEmptyElements(string inputString)
+        public IEnumerable<string> ConvertStringsToListRemoveNullAndEmptyElements(string inputString)
         {
             List<string> stringList = inputString.Split(",").ToList();
 

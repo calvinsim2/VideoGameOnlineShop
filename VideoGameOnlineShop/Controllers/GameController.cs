@@ -35,7 +35,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetGameByIdAsync(string id)
         {
-            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            Guid parseId = _commonUtilityMethods.ConvertStringToGuid(id);
             var game = await _gameApplicationService.GetExplicitGameAsync(parseId);
 
             return Ok(game);
@@ -67,7 +67,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteExistingGameAsync(string id)
         {
-            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            Guid parseId = _commonUtilityMethods.ConvertStringToGuid(id);
             await _gameApplicationService.DeleteSelectedGameAsync(parseId);
             return Ok();
         }

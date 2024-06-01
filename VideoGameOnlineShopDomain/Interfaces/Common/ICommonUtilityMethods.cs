@@ -2,8 +2,9 @@
 {
     public interface ICommonUtilityMethods
     {
-        Guid ValidateStringIfConvertableToGuid(string stringId);
+        Guid ConvertStringToGuid(string stringId);
         string RemoveEmptySpaceAndCapitalizeString(string inputString);
         void ValidateStringIfIsEmptyOrNull(string inputString);
+        IEnumerable<string> ConvertStringsToListRemoveNullAndEmptyElements(string inputString);
     }
 }

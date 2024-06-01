@@ -37,7 +37,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetDeveloperByIdAsync(string id)
         {
-            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            Guid parseId = _commonUtilityMethods.ConvertStringToGuid(id);
             var developer = await _developerApplicationService.GetExplicitDeveloperAsync(parseId);
 
             return Ok(developer);
@@ -62,7 +62,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteExistingDeveloperAsync(string id)
         {
-            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            Guid parseId = _commonUtilityMethods.ConvertStringToGuid(id);
             await _developerApplicationService.DeleteSelectedDeveloperAsync(parseId);
             return Ok();
         }

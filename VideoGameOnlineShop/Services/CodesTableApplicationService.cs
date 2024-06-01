@@ -8,6 +8,7 @@ using VideoGameOnlineShopDomain.Common;
 using VideoGameOnlineShopDomain.DomainModels.Common;
 using VideoGameOnlineShopDomain.DomainModels.Common.CodesTable;
 using VideoGameOnlineShopDomain.Interfaces.CodesTable;
+using VideoGameOnlineShopDomain.Interfaces.Common;
 
 namespace VideoGameOnlineShopApplication.Services
 {
@@ -17,16 +18,19 @@ namespace VideoGameOnlineShopApplication.Services
         private readonly ICodesTableRepository<CodeDecodeMatureRating> _codeDecodeMatureRatingRepository;
         private readonly ICodesTableRepository<CodeDecodeGenre> _codeDecodeGenreRepository;
         private readonly ICodesTableRepository<CodeDecodePlatform> _codeDecodePlatformRepository;
+        private readonly ICommonUtilityMethods _commonUtilityMethods;
 
         public CodesTableApplicationService(IMapper mapper, 
                                             ICodesTableRepository<CodeDecodeMatureRating> codeDecodeMatureRatingRepository,
                                             ICodesTableRepository<CodeDecodeGenre> codeDecodeGenreRepository,
-                                            ICodesTableRepository<CodeDecodePlatform> codeDecodePlatformRepository)
+                                            ICodesTableRepository<CodeDecodePlatform> codeDecodePlatformRepository,
+                                            ICommonUtilityMethods commonUtilityMethods)
         {
             _mapper = mapper;
             _codeDecodeMatureRatingRepository = codeDecodeMatureRatingRepository;
             _codeDecodeGenreRepository = codeDecodeGenreRepository;
             _codeDecodePlatformRepository = codeDecodePlatformRepository;
+            _commonUtilityMethods = commonUtilityMethods;
         }
 
         #region CodeDecodeMatureRating
@@ -41,7 +45,7 @@ namespace VideoGameOnlineShopApplication.Services
 
         public async Task<IEnumerable<CodesTableViewModel>> GetSelectedCodeMatureRatingByCodesAsync(string codes)
         {
-            List<string> codesList = CommonUtilityMethods.ConvertStringsToListRemoveNullAndEmptyElements(codes).ToList();
+            List<string> codesList = _commonUtilityMethods.ConvertStringsToListRemoveNullAndEmptyElements(codes).ToList();
 
             IEnumerable<CodeDecodeMatureRating> codeMatureRatings = await _codeDecodeMatureRatingRepository.FindAllCodesAsync();
 
@@ -96,7 +100,7 @@ namespace VideoGameOnlineShopApplication.Services
 
         public async Task<IEnumerable<CodesTableViewModel>> GetSelectedCodeGenreByCodesAsync(string codes)
         {
-            List<string> codesList = CommonUtilityMethods.ConvertStringsToListRemoveNullAndEmptyElements(codes).ToList();
+            List<string> codesList = _commonUtilityMethods.ConvertStringsToListRemoveNullAndEmptyElements(codes).ToList();
 
             IEnumerable<CodeDecodeGenre> codeGenres = await _codeDecodeGenreRepository.FindAllCodesAsync();
 
@@ -152,7 +156,7 @@ namespace VideoGameOnlineShopApplication.Services
 
         public async Task<IEnumerable<CodesTableViewModel>> GetSelectedCodeDecodePlatformByCodesAsync(string codes)
         {
-            List<string> codesList = CommonUtilityMethods.ConvertStringsToListRemoveNullAndEmptyElements(codes).ToList();
+            List<string> codesList = _commonUtilityMethods.ConvertStringsToListRemoveNullAndEmptyElements(codes).ToList();
 
             IEnumerable<CodeDecodePlatform> codePlatforms = await _codeDecodePlatformRepository.FindAllCodesAsync();
 

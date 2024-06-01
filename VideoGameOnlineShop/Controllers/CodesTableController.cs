@@ -60,7 +60,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpDelete("matureRating")]
         public async Task<IActionResult> DeleteCodeMatureRatingAsync(string id)
         {
-            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            Guid parseId = _commonUtilityMethods.ConvertStringToGuid(id);
             await _codesTableApplicationService.DeleteExplicitCodeMatureRatingAsync(parseId);
 
             return Ok();
@@ -109,7 +109,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpDelete("genre")]
         public async Task<IActionResult> DeleteCodeGenreAsync(string id)
         {
-            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            Guid parseId = _commonUtilityMethods.ConvertStringToGuid(id);
             await _codesTableApplicationService.DeleteExplicitCodeGenreAsync(parseId);
 
             return Ok();
@@ -158,7 +158,7 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpDelete("platform")]
         public async Task<IActionResult> DeleteCodePlatformAsync(string id)
         {
-            Guid parseId = _commonUtilityMethods.ValidateStringIfConvertableToGuid(id);
+            Guid parseId = _commonUtilityMethods.ConvertStringToGuid(id);
             await _codesTableApplicationService.DeleteExplicitCodePlatformAsync(parseId);
 
             return Ok();
