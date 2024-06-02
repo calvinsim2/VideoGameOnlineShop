@@ -39,7 +39,7 @@ namespace VideoGameOnlineShopDomain.Services
         }
         public async Task AddDeveloperAsync(DeveloperDataModel developerDataModel)
         {
-            Developer developer = DeveloperDomainMapper.MapDeveloperToDeveloperDataModel(developerDataModel);
+            Developer developer = DeveloperDomainMapper.MapDeveloperDataModelToDeveloper(developerDataModel);
 
             await _developerRepository.AddAsync(developer);
             await _developerRepository.SaveChangesAsync();

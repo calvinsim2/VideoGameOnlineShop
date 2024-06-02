@@ -49,7 +49,7 @@ namespace VideoGameOnlineShopDomain.Services
                 throw new BadRequestException("Game Name already exists");
             }
 
-            Game game = GameDomainMapper.MapGameDtoToGameDataModel(gameSubmissionDataModel);
+            Game game = GameDomainMapper.MapGameDataModelToGame(gameSubmissionDataModel);
             await _gameRepository.AddAsync(game);
             await _gameRepository.SaveChangesAsync();
         }

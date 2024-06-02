@@ -4,7 +4,7 @@ namespace VideoGameOnlineShopDomain.Helpers.Game
 {
     public class GameDomainMapper
     {
-        public static DomainModels.Game MapGameDtoToGameDataModel(GameDataModel gameSubmissionDataModel)
+        public static DomainModels.Game MapGameDataModelToGame(GameDataModel gameSubmissionDataModel)
         {
             DomainModels.Game game = new DomainModels.Game
             {
