@@ -1,4 +1,5 @@
-﻿using VideoGameOnlineShopDomain.DataModels;
+﻿using VideoGameOnlineShopDomain.Constants;
+using VideoGameOnlineShopDomain.DataModels;
 
 namespace VideoGameOnlineShopDomain.Helpers.Developer
 {
@@ -10,7 +11,8 @@ namespace VideoGameOnlineShopDomain.Helpers.Developer
             {
                 Name = developerSubmissionDataModel.Name,
                 Slogan = developerSubmissionDataModel.Slogan,
-                Logo = developerSubmissionDataModel.Logo,
+                Logo = string.IsNullOrEmpty(developerSubmissionDataModel.Logo) ? 
+                       DefaultImage.Logo : developerSubmissionDataModel.Logo,
                 DateTimeCreated = developerSubmissionDataModel.DateTimeCreated,
                 DateTimeUpdated = developerSubmissionDataModel.DateTimeUpdated,
             };

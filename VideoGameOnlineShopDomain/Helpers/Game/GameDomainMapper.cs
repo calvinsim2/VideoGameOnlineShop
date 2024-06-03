@@ -1,4 +1,5 @@
-﻿using VideoGameOnlineShopDomain.DataModels;
+﻿using VideoGameOnlineShopDomain.Constants;
+using VideoGameOnlineShopDomain.DataModels;
 
 namespace VideoGameOnlineShopDomain.Helpers.Game
 {
@@ -13,7 +14,8 @@ namespace VideoGameOnlineShopDomain.Helpers.Game
                 CodeMatureRating = gameSubmissionDataModel.CodeMatureRating,
                 Rating = 0,
                 Price = gameSubmissionDataModel.Price,
-                ImageUrl = gameSubmissionDataModel.ImageUrl ?? null,
+                ImageUrl = string.IsNullOrEmpty(gameSubmissionDataModel.ImageUrl) ? 
+                           DefaultImage.Logo : gameSubmissionDataModel.ImageUrl,
                 DeveloperId = gameSubmissionDataModel.DeveloperId,
                 CodeGenre = gameSubmissionDataModel.CodeGenre,
                 CodePlatform = gameSubmissionDataModel.CodePlatform,
