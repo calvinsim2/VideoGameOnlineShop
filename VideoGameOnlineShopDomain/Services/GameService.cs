@@ -131,6 +131,7 @@ namespace VideoGameOnlineShopDomain.Services
             existingGame.ImageUrl = incomingGameDataModel.ImageUrl;
             existingGame.DeveloperId = incomingGameDataModel.DeveloperId;
             existingGame.CodeGenre = incomingGameDataModel.CodeGenre;
+            existingGame.CodePlatform = incomingGameDataModel.CodePlatform;
             existingGame.DateTimeUpdated = DateTimeOffset.Now;
         }
 
