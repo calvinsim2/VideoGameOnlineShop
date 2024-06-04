@@ -1,5 +1,4 @@
-﻿using System.Net;
-using VideoGameOnlineShopDomain.Common.Exceptions;
+﻿using VideoGameOnlineShopDomain.Common.Exceptions;
 using VideoGameOnlineShopDomain.DataModels;
 using VideoGameOnlineShopDomain.DomainModels;
 using VideoGameOnlineShopDomain.Helpers.Developer;
