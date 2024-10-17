@@ -574,7 +574,10 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.6"
         },
         "runtime": {
-          "VideoGameOnlineShopDomain.dll": {}
+          "VideoGameOnlineShopDomain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "VideoGameOnlineShopInfrastructure/1.0.0": {
@@ -587,7 +590,10 @@
           "VideoGameOnlineShopDomain": "1.0.0"
         },
         "runtime": {
-          "VideoGameOnlineShopInfrastructure.dll": {}
+          "VideoGameOnlineShopInfrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
