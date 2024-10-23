@@ -179,5 +179,13 @@ Generated_Code/
 # to a newer Visual Studio version. Backup files are not needed,
 # because 
 
+.vs/
 *.suo
-*.dll
+*.user
+*.cache
+*.csproj.user
+.vscode/
+.v17/
+
+# Assembly info and metadata
+AssemblyInfo.cs
