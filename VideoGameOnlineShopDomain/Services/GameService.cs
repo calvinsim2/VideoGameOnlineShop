@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using VideoGameOnlineShopDomain.Common.Exceptions;
+using VideoGameOnlineShopDomain.Constants;
 using VideoGameOnlineShopDomain.DataModels;
 using VideoGameOnlineShopDomain.DomainModels;
 using VideoGameOnlineShopDomain.Helpers.Game;
@@ -25,7 +26,8 @@ namespace VideoGameOnlineShopDomain.Services
 
         public async Task<GameDataModel> GetExplicitGameAsync(Guid id)
         {
-            Game? game = await _gameRepository.GetByIdAsync(id, false) ?? throw new NotFoundException("Game not found");
+            Game? game = await _gameRepository.GetByIdAsync(id, false) ?? 
+                         throw new NotFoundException(Messages.EntityNotFoundMessage(nameof(Game)));
 
             GameDataModel gameSubmissionDataModel = GameDomainMapper.MapGameToGameDataModel(game);
             return gameSubmissionDataModel;
