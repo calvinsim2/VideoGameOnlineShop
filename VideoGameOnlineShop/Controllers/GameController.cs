@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using VideoGameOnlineShopApplication.Interfaces;
 using VideoGameOnlineShopApplication.Models.Dto;
+using VideoGameOnlineShopDomain.Common.Exceptions;
+using VideoGameOnlineShopDomain.Constants;
 using VideoGameOnlineShopDomain.Interfaces.Common;
 
 namespace VideoGameOnlineShopApplication.Controllers
@@ -35,10 +37,25 @@ namespace VideoGameOnlineShopApplication.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetGameByIdAsync(string id)
         {
-            Guid parseId = _commonUtilityMethods.ConvertStringToGuid(id);
-            var game = await _gameApplicationService.GetExplicitGameAsync(parseId);
+            try
+            {
+                Guid parseId = _commonUtilityMethods.ConvertStringToGuid(id);
+                var game = await _gameApplicationService.GetExplicitGameAsync(parseId);
 
-            return Ok(game);
+                return Ok(game);
+            }
+            catch (BadRequestException badRequestException)
+            {
+                return BadRequest(badRequestException.Message);
+            }
+            catch (NotFoundException notFoundException)
+            {
+                return NotFound(notFoundException.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = Messages.UnexpectedErrorOccured, details = ex.Message });
+            }
         }
 
         [HttpPost]
@@ -50,9 +67,18 @@ namespace VideoGameOnlineShopApplication.Controllers
                 await _gameApplicationService.AddGameAsync(gameSubmissionDto);
                 return Ok(gameSubmissionDto);
             }
-            catch (Exception ex) 
+            catch (ValidationException ex)
+            {
+                var errors = ex.Errors.Select(e => new { e.PropertyName, e.ErrorMessage });
+                return BadRequest(new { message = "Validation failed", details = errors });
+            }
+            catch (BadRequestException ex)
             {
                 return BadRequest(ex.Message);
+            }
+            catch (Exception ex) 
+            {
+                return StatusCode(500, new { message = Messages.UnexpectedErrorOccured, details = ex.Message });
             }
         }
 
