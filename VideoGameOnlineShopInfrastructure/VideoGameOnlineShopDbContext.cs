@@ -17,6 +17,7 @@ namespace VideoGameOnlineShopInfrastructure
         // Convert Models to DbSets, queries against this DbSet will be translated to queries against database.
         public DbSet<Game> Game { get; set; } = null!;
         public DbSet<Developer> Developer { get; set; } = null!;
+        public DbSet<User> User { get; set; } = null!;
         public DbSet<CodeDecodeMatureRating> CodeDecodeMatureRating { get; set; } = null!;
         public DbSet<CodeDecodeGenre> CodeDecodeGenre { get; set; } = null!;
         public DbSet<CodeDecodePlatform> CodeDecodePlatform { get; set; } = null!;
@@ -25,6 +26,7 @@ namespace VideoGameOnlineShopInfrastructure
         {
             modelBuilder.ApplyConfiguration(new GameEntityConfiguration());
             modelBuilder.ApplyConfiguration(new DeveloperEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new UserEntityConfiguration());
             modelBuilder.ApplyConfiguration(new CodeDecodeMatureRatingConfiguation());
             modelBuilder.ApplyConfiguration(new CodeDecodeGenreConfiguration());
             modelBuilder.ApplyConfiguration(new CodeDecodePlatformConfiguration());

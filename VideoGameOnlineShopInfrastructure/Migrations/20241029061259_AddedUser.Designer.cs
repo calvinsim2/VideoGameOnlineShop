@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VideoGameOnlineShopInfrastructure;
 
@@ -11,9 +12,10 @@ using VideoGameOnlineShopInfrastructure;
 namespace VideoGameOnlineShopInfrastructure.Migrations
 {
     [DbContext(typeof(VideoGameOnlineShopDbContext))]
-    partial class VideoGameOnlineShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241029061259_AddedUser")]
+    partial class AddedUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -176,9 +178,6 @@ namespace VideoGameOnlineShopInfrastructure.Migrations
                     b.Property<string>("DisplayName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsAdmin")
-                        .HasColumnType("bit");
 
                     b.Property<byte[]>("PasswordHash")
                         .IsRequired()
