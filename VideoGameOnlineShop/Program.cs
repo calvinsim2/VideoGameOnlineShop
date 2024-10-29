@@ -86,10 +86,13 @@ static void ConfigureServices(IServiceCollection services)
 
     services.AddScoped<IGameApplicationService, GameApplicationService>();
     services.AddScoped<IDeveloperApplicationService, DeveloperApplicationService>();
+    services.AddScoped<IUserApplicationService, UserApplicationService>();
     services.AddScoped<ICodesTableApplicationService, CodesTableApplicationService>();
+    services.AddScoped<IAuthorizationUtilityMethods, AuthorizationUtilityMethods>();
 
     services.AddScoped<IGameService, GameService>();
     services.AddScoped<IDeveloperService, DeveloperService>();
+    services.AddScoped<IUserService, UserService>();
 
     #endregion
 
@@ -97,6 +100,7 @@ static void ConfigureServices(IServiceCollection services)
 
     services.AddScoped<IGameRepository, GameRepository>();
     services.AddScoped<IDeveloperRepository, DeveloperRepository>();
+    services.AddScoped<IUserRepository, UserRepository>();
     services.AddScoped<ICodesTableRepository<CodeDecodeMatureRating>, CodesTableRepository<CodeDecodeMatureRating>>();
     services.AddScoped<ICodesTableRepository<CodeDecodeGenre>, CodesTableRepository<CodeDecodeGenre>>();
     services.AddScoped<ICodesTableRepository<CodeDecodePlatform>, CodesTableRepository<CodeDecodePlatform>>();
@@ -115,6 +119,8 @@ static void ConfigureServices(IServiceCollection services)
     services.AddScoped<IValidator<GameUpdateDto>, GameUpdateDtoValidator>();
     services.AddScoped<IValidator<DeveloperSubmissionDto>, DeveloperSubmissionDtoValidator>();
     services.AddScoped<IValidator<DeveloperUpdateDto>, DeveloperUpdateDtoValidator>();
+    services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
+    services.AddScoped<IValidator<LoginDto>, LoginDtoValidator>();
 
     #endregion
 }
